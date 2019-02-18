@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[转贴]程序基于精确的数学 ——STL之父访谈 - 科学技术(理工圣地/SCIENCE TECH &amp; ENGI -  Discuz! Board -  Powered by Discuz!</title>
+<link href="1.html" rel="canonical" />
+<meta name="keywords" content="[转贴]程序基于精确的数学 ——STL之父访谈" />
+<meta name="description" content="【内容提要】Alex Stepanov ，STL（标准模板库）之父，并因此而荣获第一届Dr.Dobb’s 程序设计杰出奖，现在是Adobe公司首席科学家。他曾是康柏电脑公司的副总裁和首席科 ... [转贴]程序基于精确的数学 ——STL之父访谈 ,Discuz! Board" />
+<meta name="generator" content="Discuz! X3.4" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2017 Comsenz Inc." />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="" /><link rel="stylesheet" type="text/css" href="../../../data/cache/style_1_common.css?xzn" /><link rel="stylesheet" type="text/css" href="../../../data/cache/style_1_forum_viewthread.css?xzn" /><script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'xzn', charset = 'utf-8', discuz_uid = '1', cookiepre = 'dDPS_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '0||', defaultstyle = '', REPORTURL = 'aHR0cDovL2xpdXNxLXNoYW5naGFpL3JvY3UvYmJzL3RocmVhZC82NC8xLzIuaHRtbA==', SITEURL = '../../../', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="../../../static/js/common.js?xzn" type="text/javascript"></script>
+<meta name="application-name" content="Discuz! Board" />
+<meta name="msapplication-tooltip" content="Discuz! Board" />
+<meta name="msapplication-task" content="name=论坛;action-uri=../../../forum.php;icon-uri=../../../static/image/common/bbs.ico" />
+<link rel="archives" title="Discuz! Board" href="../../../archiver/" />
+<link rel="stylesheet" id="css_widthauto" type="text/css" href='../../../data/cache/style_1_widthauto.css?xzn' />
+<script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
+<script src="../../../static/js/forum.js?xzn" type="text/javascript"></script>
+</head>
+
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="wp">
+<div class="z"><a href="javascript:;"  onclick="setHomepage('../../../');">设为首页</a><a href="../../../"  onclick="addFavorite(this.href, 'Discuz! Board');return false;">收藏本站</a></div>
+<div class="y">
+<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
+<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到窄版" class="switchwidth">切换到窄版</a>
+<a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});">切换风格</a>
+<a id="diy-tg" href="javascript:openDiy();" title="打开 DIY 面板" class="xi1 xw1" onmouseover="showMenu(this.id)"><img src="../../../static/image/diy/panel-toggle.png" alt="DIY" /></a>
+<div id="diy-tg_menu" style="display: none;">
+<ul>
+<li><a href="javascript:saveUserdata('diy_advance_mode', '');openDiy();" class="xi2">简洁模式</a></li>
+<li><a href="javascript:saveUserdata('diy_advance_mode', '1');openDiy();" class="xi2">高级模式</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<ul id="myprompt_menu" class="p_pop" style="display: none;">
+<li><a href="../../../home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news_0"></em>消息</a></li>
+<li><a href="../../../home.php?mod=follow&amp;do=follower"><em class="prompt_follower_0"></em>新听众</a></li>
+<li class="ignore_noticeli"><a href="javascript:;" onclick="setcookie('ignore_notice', 1);hideMenu('myprompt_menu')" title="暂不提醒"><em class="ignore_notice"></em></a></li>
+</ul>
+<div id="sslct_menu" class="cl p_pop" style="display: none;">
+<span class="sslct_btn" onclick="extstyle('')" title="默认"><i></i></span><span class="sslct_btn" onclick="extstyle('./template/default/style/t1')" title="红"><i style='background:#BA350F'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t2')" title="青"><i style='background:#429296'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t3')" title="橙"><i style='background:#FE9500'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t4')" title="紫"><i style='background:#9934B7'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t5')" title="蓝"><i style='background:#0053B9'></i></span>
+</div>
+<ul id="myitem_menu" class="p_pop" style="display: none;">
+<li><a href="../../../forum.php?mod=guide&amp;view=my">帖子</a></li>
+<li><a href="../../../home.php?mod=space&amp;do=favorite&amp;view=me">收藏</a></li>
+<li><a href="../../../home.php?mod=space&amp;do=friend">好友</a></li>
+</ul>
+<div id="qmenu_menu" class="p_pop " style="display: none;">
+<ul class="cl nav"><li><a href="../../../home.php?mod=magic" style="background-image:url(../../../static/image/feed/magic_b.png) !important">道具</a></li>
+<li><a href="../../../home.php?mod=medal" style="background-image:url(../../../static/image/feed/medal_b.png) !important">勋章</a></li>
+<li><a href="../../../home.php?mod=task" style="background-image:url(../../../static/image/feed/task_b.png) !important">任务</a></li>
+</ul>
+<div id="fjump_menu" class="btda"></div></div><div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="../../../" title="Discuz! Board"><img src="../../../static/image/common/logo.png" alt="Discuz! Board" border="0" /></a></h2><div id="um">
+<div class="avt y"><a href="../../../home.php?mod=space&amp;uid=1"><img src="../../../uc_server/avatar.php?uid=1&size=small" /></a></div>
+<p>
+<strong class="vwmy"><a href="../../../home.php?mod=space&amp;uid=1" target="_blank" title="访问我的空间">admin</a></strong>
+<span id="loginstatus">
+<a id="loginstatusid" href="../../../member.php?mod=switchstatus" title="切换在线状态" onclick="ajaxget(this.href, 'loginstatus');return false;" class="xi2"></a>
+</span>
+<span class="pipe">|</span><a href="javascript:;" id="myitem" class="showmenu" onmouseover="showMenu({'ctrlid':'myitem'});">我的</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=spacecp">设置</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=space&amp;do=pm" id="pm_ntc">消息</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=space&amp;do=notice" id="myprompt" class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a><span id="myprompt_check"></span>
+<span class="pipe">|</span><a href="../../../portal.php?mod=portalcp">模块管理</a>
+<span class="pipe">|</span><a href="../../../member.php?mod=logging&amp;action=logout&amp;formhash=80163c02">退出</a>
+</p>
+<p>
+<a href="../../../home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: 3718</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=spacecp&amp;ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this, showUpgradeinfo)">用户组: 管理员</a>
+</p>
+</div>
+</div>
+
+<div id="nv">
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(51);})">快捷导航</a>
+<ul><li class="a" id="mn_forum" ><a href="../../../index.html" hidefocus="true" title="BBS"  >论坛<span>BBS</span></a></li></ul>
+</div>
+<div id="mu" class="cl">
+</div><div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="../../../search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="80163c02" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="51" />
+<input type="hidden" name="srhlocality" value="forum::viewthread" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="scbar_icon_td"></td>
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="scbar_hot_td">
+<div id="scbar_hot">
+<strong class="xw1">热搜: </strong>
+
+<a href="../../../search.php?mod=forum&amp;srchtxt=%E6%B4%BB%E5%8A%A8&amp;formhash=80163c02&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">活动</a>
+
+
+
+<a href="../../../search.php?mod=forum&amp;srchtxt=%E4%BA%A4%E5%8F%8B&amp;formhash=80163c02&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">交友</a>
+
+
+
+<a href="../../../search.php?mod=forum&amp;srchtxt=discuz&amp;formhash=80163c02&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">discuz</a>
+
+</div>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="51" >本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+</div>
+</div>
+
+
+<div id="wp" class="wp">
+<script type="text/javascript">var fid = parseInt('51'), tid = parseInt('64');</script>
+<script src="../../../static/js/forum_moderate.js?xzn" type="text/javascript"></script>
+
+<script src="../../../static/js/forum_viewthread.js?xzn" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '600';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="../../../" class="nvhm" title="首页">Discuz! Board</a><em>&raquo;</em><a href="../../../index.html">论坛</a> <em>&rsaquo;</em> <a href="../../../forum/28/1.html">九阳神功(学术讲坛/ACADEMICS)</a> <em>&rsaquo;</em> <a href="../../../forum/51/2.html">科学技术(理工圣地/SCIENCE TECH &amp; ENGI</a> <em>&rsaquo;</em> <a href="1.html">[转贴]程序基于精确的数学 ——STL之父访谈 ...</a>
+</div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl pbm bbs">
+<div class="pgt"></div>
+<span class="y pgb" id="visitedforums" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'34'})"><a href="../../../forum/51/2.html">返回列表</a></span>
+<a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=51')" href="javascript:;" title="发新帖"><img src="../../../static/image/common/pn_post.png" alt="发新帖" /></a><a id="post_reply" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=51&tid=64')" href="javascript:;" title="回复"><img src="../../../static/image/common/pn_reply.png" alt="回复" /></a>
+</div>
+
+<ul class="p_pop" id="newspecial_menu" style="display: none">
+<li><a href="../../../forum.php?mod=post&amp;action=newthread&amp;fid=51">发表帖子</a></li><li class="poll"><a href="../../../forum.php?mod=post&amp;action=newthread&amp;fid=51&amp;special=1">发起投票</a></li><li class="trade"><a href="../../../forum.php?mod=post&amp;action=newthread&amp;fid=51&amp;special=2">出售商品</a></li></ul>
+<div id="mdly" class="fwinmask" style="display:none;z-index:350;">
+<table cellspacing="0" cellpadding="0" class="fwin">
+<tr>
+<td class="t_l"></td>
+<td class="t_c"></td>
+<td class="t_r"></td>
+</tr>
+<tr>
+<td class="m_l">&nbsp;&nbsp;</td>
+<td class="m_c">
+<div class="f_c">
+<div class="c">
+<h3>选中&nbsp;<strong id="mdct" class="xi1"></strong>&nbsp;篇: </h3>
+<a href="javascript:;" onclick="modaction('warn')">警告</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('banpost')">屏蔽</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('delpost')">删除</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('stickreply')">置顶</a><span class="pipe">|</span></div>
+</div>
+</td>
+<td class="m_r"></td>
+</tr>
+<tr>
+<td class="b_l"></td>
+<td class="b_c"></td>
+<td class="b_r"></td>
+</tr>
+</table>
+</div>
+<div id="modmenu" class="xi2 pbm"><a href="javascript:;" onclick="modthreads(3, 'delete')">删除主题</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(3, 'bump')">升降</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(1, 'stick')">置顶</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('live')">直播</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(1, 'highlight')">高亮</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(1, 'digest')">精华</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('stamp')">图章</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('stamplist')">图标</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(4)">关闭</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(2, 'move')">移动</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(2, 'type')">分类</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('copy')">复制</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('merge')">合并</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('split')">分割</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('repair')">修复</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('warn', '51001')">警告</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('banpost', '51001')">屏蔽</a><span class="pipe">|</span><a href="javascript:;" onclick="showWindow('mods', 'forum.php?mod=tag&op=manage&tid=64', 'get', 0)">标签</a><span class="pipe">|</span></div>
+
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls ptn pbn">
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1">202</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">1</span>
+</div>
+</td>
+<td class="plc ptm pbn vwthd">
+<div class="y">
+<a href="../../../forum.php?mod=viewthread&amp;action=printable&amp;tid=64" title="打印" target="_blank"><img src="../../../static/image/common/print.png" alt="打印" class="vm" /></a>
+<a href="../../../forum.php?mod=redirect&amp;goto=nextoldset&amp;tid=64" title="上一主题"><img src="../../../static/image/common/thread-prev.png" alt="上一主题" class="vm" /></a>
+<a href="../../../forum.php?mod=redirect&amp;goto=nextnewset&amp;tid=64" title="下一主题"><img src="../../../static/image/common/thread-next.png" alt="下一主题" class="vm" /></a>
+</div>
+<h1 class="ts">
+<span id="thread_subject">[转贴]程序基于精确的数学 ——STL之父访谈</span>
+</h1>
+<span class="xg1">
+<a href="../../../forum.php?mod=viewthread&amp;tid=64&amp;fromuid=1" onclick="return copyThreadUrl(this, 'Discuz! Board')" title="您的朋友访问此链接后，您将获得相应的积分奖励">[复制链接]</a>
+</span>
+</td>
+</tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table><div id="post_51001" ><table id="pid51001" class="plhin" summary="pid51001" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar51001" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="../../../home.php?mod=space&amp;uid=17" target="_blank" class="xw1">louisianna</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_0" id="userinfo51001" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo51001_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="../../../home.php?mod=space&amp;uid=17" target="_blank" class="xi2">louisianna</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="../../../home.php?mod=space&amp;uid=17&amp;do=profile" target="_blank" class="xi2">17</a></dd>
+</dl><div class="imicn">
+<a href="../../../home.php?mod=space&amp;uid=17&amp;do=profile" target="_blank" title="查看详细资料"><img src="../../../static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo51001')"><a href="../../../home.php?mod=space&amp;uid=17" class="avtm" target="_blank"><img src="../../../uc_server/avatar.php?uid=17&size=middle" /></a></div>
+</div>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="../../../home.php?mod=space&amp;uid=17&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" class="xi2">269</a></p>主题</th><th><p><a href="../../../home.php?mod=space&amp;uid=17&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" class="xi2">708</a></p>帖子</th><td><p><a href="../../../home.php?mod=space&amp;uid=17&amp;do=profile" class="xi2">17</a></p>积分</td></table></div>
+
+<p><em><a href="../../../home.php?mod=spacecp&amp;ac=usergroup&amp;gid=3" target="_blank">版主</a></em></p>
+<p class="xg1">赤琏仙子</p>
+
+<p><span><img src="../../../static/image/common/star_level3.gif" alt="Rank: 7" /><img src="../../../static/image/common/star_level2.gif" alt="Rank: 7" /><img src="../../../static/image/common/star_level1.gif" alt="Rank: 7" /></span></p>
+
+
+
+<dl class="pil cl">
+	<dt>积分</dt><dd><a href="../../../home.php?mod=space&amp;uid=17&amp;do=profile" target="_blank" class="xi2">17</a></dd>
+</dl>
+
+<dl class="pil cl"></dl><ul class="xl xl2 o cl">
+<li class="pm2"><a href="../../../home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_17&amp;touid=17&amp;pmid=0&amp;daterange=2&amp;pid=51001&amp;tid=64" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+<p class="cp_pls cl">
+<a href="../../../forum.php?mod=topicadmin&amp;action=getip&amp;fid=51&amp;tid=64&amp;pid=51001" onclick="ajaxmenu(this, 0, 0, 2);doane(event)">IP</a>
+<a href="../../../admin.php?frames=yes&amp;action=members&amp;operation=search&amp;uid=17&amp;submit=yes" target="_blank">编辑</a>
+<a href="../../../admin.php?action=members&amp;operation=ban&amp;username=louisianna&amp;frames=yes" target="_blank">禁止</a>
+<a href="../../../forum.php?mod=modcp&amp;action=thread&amp;op=post&amp;do=search&amp;searchsubmit=1&amp;users=louisianna" target="_blank">帖子</a>
+<a href="../../../forum.php?mod=ajax&amp;action=quickclear&amp;uid=17" onclick="showWindow('qclear_17', this.href, 'get', 0)">清理</a>
+</p>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<div id="fj" class="y">
+<label class="z">电梯直达</label>
+<input type="text" class="px p_fre z" size="2" onkeyup="$('fj_btn').href='forum.php?mod=redirect&ptid=64&authorid=0&postno='+this.value" onkeydown="if(event.keyCode==13) {window.location=$('fj_btn').href;return false;}" title="跳转到指定楼层" />
+<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="../../../static/image/common/fj_btn.png" alt="跳转到指定楼层" class="vm" /></a>
+</div>
+<strong>
+<a href="../../../forum.php?mod=viewthread&amp;tid=64&amp;fromuid=1"  title="您的朋友访问此链接后，您将获得相应的积分奖励" id="postnum51001" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+楼主</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon51001" src="../../../static/image/common/online_moderator.gif" />
+<em id="authorposton51001">发表于 2005-5-16 17:36:33</em>
+<span class="pipe">|</span>
+<a href="../../../forum.php?mod=viewthread&amp;tid=64&amp;page=1&amp;authorid=17" rel="nofollow">只看该作者</a>
+<span class="none"><img src="../../../static/image/common/arw_r.gif" class="vm" alt="回帖奖励" /></span>
+<span class="pipe show">|</span><a href="../../../forum.php?mod=viewthread&amp;tid=64&amp;extra=page%3D2&amp;ordertype=1"  class="show">倒序浏览</a>
+<span class="pipe show">|</span><a href="javascript:;" onclick="readmode($('thread_subject').innerHTML, 51001);" class="show">阅读模式</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_51001">
+【内容提要】Alex Stepanov ，STL（标准模板库）之父，并因此而荣获第一届Dr.<br />
+Dobb’s 程序设计杰出奖，现在是Adobe公司首席科学家。他曾是康柏电脑公司的<br />
+副总裁和首席科学家，AT&amp;T实验室副总裁和首席架构师，SGI服务和超级计算机业<br />
+务首席技术官。<br />
+<br />
+寻迹<br />
+<br />
+当IT爆发式膨胀的同时，有一些人曾默默地奉献，他们可能开创了一个时代，他们<br />
+的作品可能是IT发展中的一个里程碑……<br />
+<br />
+程序基于精确的数学<br />
+——STL之父Alex Stepanov访谈录<br />
+<br />
+了解Alex和STL<br />
+Alex Stepanov ，STL（标准模板库）之父，并因此而荣获第一届Dr. Dobb’s 程<br />
+序设计杰出奖，现在是Adobe公司首席科学家。他曾是康柏电脑公司的副总裁和首<br />
+席科学家，AT&amp;T实验室副总裁和首席架构师，SGI服务和超级计算机业务首席技术<br />
+官。<br />
+<br />
+背景：Dr. Dobb’s程序设计杰出奖<br />
+<br />
+从1991 年起，每年《Dr. Dobb’s Journal》都会将荣誉给予那些对软件开发的发<br />
+展做出了重要贡献的人。这就是著名的Dr. Dobb’s 程序设计杰出奖 (Excellence<br />
+in Programming Award)。<br />
+<br />
+Alex Stepanov先生<br />
+什么是STL呢？STL就是Standard Template Library（标准模板库）的简称，它是<br />
+由Alexander Stepanov和Meng Lee在惠普实验室工作时所开发出来的。现在虽说它<br />
+主要出现在C++中，但在被引入C++之前，Alex和David&nbsp;&nbsp;Musser已对该技术进行了<br />
+很长一段时间的研究。STL是多年来编程应用中常用组件的集合，STL的贡献是将各<br />
+组件和接口泛化及标准化。这样可以极大地提高编程效率，STL现在是C++的一部分<br />
+，任何C++平台都包含着它。<br />
+<br />
+<br />
+中国.数学.未来<br />
+<br />
+对于STL之父Stepanov先生来说，他更像一位数学家，而他的经历也说明了这一点<br />
+。和在上个月我们采访的C++之父一起，这次他是第一次来到中国，而他对古代中<br />
+国和中国数学家的了解，更是让人佩服；当然，更有他对中国程序员们的祝愿！除<br />
+了祝愿，还有大师的点滴看法，毕竟不能只说好听的！——真正的朋友都是这么做<br />
+的。<br />
+<br />
+Stepanov先生告诉记者计算机科学是建立在数学之上的精确的学科，他说：“程序<br />
+设计就像同未理顺的复杂性问题打的一场战斗，既然要打这场战斗，而数学首当其<br />
+冲，几个世纪以来，数学的作用正在于此。如果将现在生动的数学体系作为实验证<br />
+据，对于解决人类遇到的复杂性问题，数学还是最有效的。”<br />
+<br />
+当我们问他对中国和中国的程序员的认识时，他的回答还是和数学相关。他告诉记<br />
+者：中国是一个伟大的国家。曾有过许多伟大的数学家：秦九韶的《数书九章》就<br />
+是古代数学中的经典；《孙子兵法》中已包含现代西方称之为中国余数定理的内容<br />
+。现代中国也产生过许多真正的伟大的数学家，如关于哥德巴赫猜想（Goldbach <br />
+conjecture）所做出杰出贡献的陈景润先生。<br />
+<br />
+Stepanov先生的编程信条是：程序设计是基于精确的数学训练的。他的建议更是浅<br />
+显而简洁：好好学数学，好好学计算机，好好学英语。<br />
+<br />
+Alex和中国电脑爱好者共勉：继续学习！<br />
+<br />
+谈到未来时，他虽然并没有明确回答什么，但对美好未来的憧憬，还是和大家的期<br />
+待一样。关于将来要用的计算机语言，他也有自己的答案。他说：C++和Java会在<br />
+近几年得到最大广泛的应用，我更期望最终会有某些新的、更完美的语言出现。<br />
+<br />
+<br />
+大师和成长历程<br />
+1950年11月16日，Stepanov先生生于苏联莫斯科，在莫斯科大学研究数学，但他从<br />
+未成为一名数学家。因为他实在不能对Tamagawa算术、Coxeter群等一些纯数学的<br />
+东西感到兴趣。Stepanov先生的想法很单纯，他要脚踏实地干事。对他来说最幸运<br />
+的事情是，他能够看到很多伟大的数学家是如何做学问的，也就使他更清楚地看清<br />
+计算机科学中一些司空见惯的伪数学。因此，能成为一名程序员对他和计算机科学<br />
+来说真是一件好事。<br />
+另两位大师对他的影响是显而易见的，一位是计算机程序设计艺术教授高德纳（<br />
+Donald Knuth）先生，另一位则是计算机科学大师Edsger Dijkstra。他深情地说<br />
+：“前者告诉我答案，后者则引我深思。”而他对高德纳先生的《计算机程序设计<br />
+艺术》一书的推崇，也使我们找到了提高自己编程水平的杀手锏。<br />
+1984年，他成为纽约布鲁克林理工大学助理教授。他说：“教授计算机科学使我受<br />
+益匪浅，我要对付各种研究生课程。在此过程中，我学到了很多新东西。我还用<br />
+Scheme语言开发了一个巨大的数据结构和算法库，这项工作导致了Ada泛型库的诞<br />
+生（这是和Dave Musser合作的）。在贝尔实验室短暂地研究了一段时间，设计了<br />
+一个新的C++算法库，在1998年去了位于Palo Alto的惠普实验室。在那儿，先花了<br />
+四年时间研究存储系统。1993年，得到了一个回头研究泛型编程的机会。而STL就<br />
+是这次研究的结果。1995年又到了Silicon Graphics，在此，组建了一个小组继续<br />
+进行STL的开发工作。”<br />
+他现在是Adobe公司的首席科学家。Adobe是一家生产诸如Acrobat和Photoshop之类<br />
+桌面软件的公司。<br />
+<br />
+高德纳先生的《计算机程序设计艺术》一书，正是Alex Stepanov先生极力推荐的<br />
+一部作品,不论电邮中还是面对面时，他反复强调这部著作是一个珍宝库，想要什<br />
+么，里面便有什么，而他在和这本书打交道的三十多年，从中受益无穷。从他对高<br />
+德纳先生《计算机程序设计艺术》的巨大推崇上，也对他的个性有所印证。<br />
+<br />
+STL故事<br />
+STL是Stepanov先生一生中浓墨重彩的一笔，而这一笔在他的描述中却是那样地不<br />
+经意。STL也是他个性的重要体现，独立思考，缜密逻辑。要了解STL之父，首先要<br />
+知晓什么是STL。<br />
+有一位意大利记者曾向Stepanov先生问过此问题：STL究竟是指Standard Template<br />
+Library（标准模板库）还是 Stepanov and Lee？<br />
+Stepanov先生笑着解释他的玩笑：哦，它真的是指Standard Template Library。<br />
+我曾经在Dr. Dobb的杂志做的那个专访里开玩笑说，STL是指“Stepanov and Lee<br />
+”，但它只是个玩笑而已。<br />
+而真正的STL实质上包含了二者的意思。Meng Lee是他的一位无可挑剔的合作伙伴<br />
+，她使Stepanov先生更专注，她在代码和文档上花了大量的令人筋疲力尽的时间。<br />
+正是由于像Lee这样的合作者，使得STL最终广为世人传播。<br />
+<br />
+Stepanov 先生在互联网上很低调,既没有个人主页,也很难搜索其电邮。<br />
+STL代表什么呢？Stepanov and Lee，这不完全是个玩笑，Meng Lee架起了我们与<br />
+Stepanov先生沟通的又一架桥梁。这篇采访中滋润着她的汗水……<br />
+<br />
+<br />
+对话STL之父Alex Stepanov<br />
+<br />
+当我面对面见到Alex Stepanov先生时，和我面对他的像片时想像的是另一个人，<br />
+从他的唯一的官方照片上， 我们不难对他有威严的遐想，但实际上那并非他自然<br />
+的一面——幽默风趣、平易近人才是真正的他。<br />
+<br />
+Stepanov先生和C++之父Bjarne Stroustrup 先生是很好的朋友，Bjarne的推荐对<br />
+我们的采访起了重要的推动作用，他告诉我：Stepanov先生经常有一些有趣的和重<br />
+要的东西要说。<br />
+Stepanov先生有着非常严重的个人魅力，他的言辞激进，甚至让人想到“猛烈”“<br />
+尖锐”等字眼，这可能也正是他对计算机内涵的深刻体会和精深的数学涵养所致—<br />
+—他的眼里容不得半粒沙子。<br />
+<br />
+他给我们的忠告很简洁：“好好学数学，好好学计算机，好好学英语。”<br />
+<br />
+问：您认为编程的好的方法是什么？对于编程来说，一种工具是不是必需的？<br />
+Alex：我认为学习多种不同的编程语言是非常重要的。我用过Algol-60, Common <br />
+Lisp, Scheme, Ada, C, C++, Java,和多种汇编语言。然而，也不能仅仅局限于程<br />
+序语言，它仅仅是种表达算法和数据结构的工具——并且是种有缺陷的工具。一如<br />
+Niklaus Wirth有句精辟见解：程序=算法+数据结构。<br />
+<br />
+问：您认为计算机语言和人类的语言有什么区别？<br />
+Alex：没有人尝试过用计算机语言写出诗歌来。计算机语言发展到能允许我们解决<br />
+一些真正美好的现实生活中的东西，还有很长的路要走。<br />
+STL和OO<br />
+<br />
+追根溯源，STL起源于什么？意大利记者的提问对我们将有所帮助。<br />
+问：STL一开始被设想为今天这个样子吗？即所谓的C++标准库，或者，它是从别的<br />
+什么项目来的？告诉我们一些关于STL的历史好吗？<br />
+ 答： 1976年，又要说回到苏联了，我因为吃生鱼片得了严重的食物中毒而住院<br />
+，在精神恍惚中，我忽然意识到并发的加法计算能力是基于加法是结合性的[译注<br />
+：我对这句 话的理解是：比如说a + b + c = a + ( b + c) = ( a + b) + c]。<br />
+（因此，STL可以说是细菌传染的结果J）同时，我意识到并发的减法运算是和半群<br />
+结构类型有关联的，这就是最基本的重点：算法是定义于代数结构基础之上的。我<br />
+又花了一些年头，意识到必须在正规公理上加入复杂性必要条件以扩展结构的概念<br />
+，接着又花了15年之久才完成全面的架构。（我直到现在都不能确定我是否成功地<br />
+让我朋友小圈子之外的任何人理解了这一点）。我相信迭代器理论是计算科学的中<br />
+心就象环或Banach区间理论是数学的中心一样。每次当我找到一个算法时，我都要<br />
+努力去寻求它所定义的结构基础。我想做的就是泛化地描述算法，并乐此不疲。我<br />
+可以花一个月时间去精确地描述一个众所周知的算法的泛化表示。迄今为止，在向<br />
+人们解释我这种行为的重要性方面，我是异乎寻常的失败。然而，不知何故，这种<br />
+行为的结果─STL却是如此成功。<br />
+关于STL还有很多故事：STL如何成为C++标准的呢？Stepanov先生有下面的表述，<br />
+表述中也有他对C++之父Bjarne Stroustrup先生的精彩描述。<br />
+问：有一件事情我一直都很惊奇—C++标准委员会那么快就采纳了STL。我的意思是<br />
+，这些委员会可都是以谨慎和保守而出名的。这一点，你怎么解释？<br />
+答： Bjarne Stroustrup的支持是至关重要的。如果说Bjarne想要什么东西的话，<br />
+那就是他真的想把STL弄到标准里，他办到了。他象骡子一样固执。甚至逼着我去<br />
+改STL——我从来都不会为第二个人这么做——我也是个顽固分子。但他是我所认<br />
+识的最有主见的人，他花了一些时间去理解STL是干啥的，当他理解之后，他决定<br />
+使其成功地被大家接受。他对STL的贡献还在于他支持“不止一种编程方法是‘合<br />
+理的’”的观点——这对立于十来年认同“唯一”方法的无休止的争执和夸大——<br />
+而坚持把弹性、效率、重载、类型安全结合在模板里以致于STL成为可能。我很乐<br />
+意明白地声明Bjarne是我这一代人里卓越的语言设计家。<br />
+问：您是由于什么原因而发明了STL？发明的过程是什么样子的？它对您的生活和<br />
+研究有什么影响吗？<br />
+Alex： STL的发明源于我多年对程序灵活性和参数化探索的结果。我对此仍不太满<br />
+意：因为C++语言上的一些缺憾，使得我不能完全表达我要表达的意思。STL应当做<br />
+将来要设计的库的草稿。我不知道在我有生之年是否能看得到，但我坚信最终会有<br />
+一个关于算法和数据结构的标准架构，说不定作为读者的你就是这一发明人呢！<br />
+我觉得很难形容STL对我生活和研究的影响。STL并未从本质上改变我的生活，因为<br />
+我没有通过它赚到任何钱。我想向我的几个朋友展示一下正确的编程方法，而 <br />
+STL正是为他们而做的。事实上将这项工作完成带给我很多快乐，当我听说它帮助<br />
+某人解决了问题时，我更加快乐。当然也有人说如果让他们设计他们可以设计出更<br />
+好的东西来，也有人对STL嗤之以鼻。这些攻击也确实伤害到我。<br />
+和STL形成对照的是OO——面向对象编程。OO的思想困绕着许多程序员，OO的思想<br />
+一直困绕着我，从未有人对OO表达过如此强烈的想法——除了Stepanov先生。我想<br />
+：作为一个程序员，这种东东一定是要掌握的，但是……，请看下面Stepanov先生<br />
+的观点：<br />
+<br />
+问： 您对面向对象是怎样理解的？它是不是一种好的可接受的编程思考方式？有<br />
+没有学习OO必须的有用的工具？<br />
+Alex：我尽量避免用OO思考问题，我对他们编程的方法不感冒。在对意大利的一家<br />
+期刊采访时我曾说过：“我发现 OOP在技术上是有问题的，它妄图用基于单一类型<br />
+的不同接口来分解世界，为了处理不同的实际问题，你需要不同种类的代数方法以<br />
+横跨不同类型的接口族；我发现OOP在思想上是不健全的，它声称一切都是一个对<br />
+象。即使真的是这样这也没什么意思─说一切都是对象跟什么都没说一样；我发现<br />
+OOP的方法论是错误的，它从类开始。就好像数学要从公理开始一样。你不是从公<br />
+理开始─你是从证明开始。直到你找到了一大堆相关证据你才能归纳出公理，以公<br />
+理结束。编程上存在着同样的事实：你要从有趣的算法开始。只有很好地理解了算<br />
+法，你才有可能提出合理的接口以让其他组件共同工作。”我再重复强调一点：程<br />
+序是描述算法和数据结构的，而不是描述继承性和多态性的。</td></tr></table>
+
+
+</div>
+<div id="comment_51001" class="cm">
+</div>
+
+<div id="post_rate_div_51001"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+<div id="p_btn" class="mtw mbm hm cl">
+
+<a href="../../../home.php?mod=spacecp&amp;ac=favorite&amp;type=thread&amp;id=64&amp;formhash=80163c02" id="k_favorite" onclick="showWindow(this.id, this.href, 'get', 0);" onmouseover="this.title = $('favoritenumber').innerHTML + ' 人收藏'" title="收藏本帖"><i><img src="../../../static/image/common/fav.gif" alt="收藏" />收藏<span id="favoritenumber" style="display:none">0</span></i></a>
+</div>
+</td>
+</tr>
+<tr id="_postposition51001"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=64&amp;reppost=51001&amp;extra=page%3D2&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+<a class="editp" href="../../../forum.php?mod=post&amp;action=edit&amp;fid=51&amp;tid=64&amp;pid=51001&amp;page=1">编辑</a><a class="push" href="javascript:;" onclick="modaction('recommend', '51001', 'op=recommend&idtype=tid&id=64&pid=51001', 'portal.php?mod=portalcp&ac=portalblock')">推送</a></em>
+
+<p>
+<a href="javascript:;" id="mgc_post_51001" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport51001', 'misc.php?mod=report&rtype=post&rid=51001&tid=64&fid=51', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_51001_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_51001')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_26126" ><table id="pid26126" class="plhin" summary="pid26126" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar26126" class="pls favatar">
+ <a name="lastpost"></a><div class="pi">
+<div class="authi"><a href="../../../home.php?mod=space&amp;uid=78" target="_blank" class="xw1">hohohmm</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_0" id="userinfo26126" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo26126_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="../../../home.php?mod=space&amp;uid=78" target="_blank" class="xi2">hohohmm</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="../../../home.php?mod=space&amp;uid=78&amp;do=profile" target="_blank" class="xi2">1</a></dd>
+</dl><div class="imicn">
+<a href="../../../home.php?mod=space&amp;uid=78&amp;do=profile" target="_blank" title="查看详细资料"><img src="../../../static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo26126')"><a href="../../../home.php?mod=space&amp;uid=78" class="avtm" target="_blank"><img src="../../../uc_server/avatar.php?uid=78&size=middle" /></a></div>
+</div>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="../../../home.php?mod=space&amp;uid=78&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" class="xi2">3</a></p>主题</th><th><p><a href="../../../home.php?mod=space&amp;uid=78&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" class="xi2">64</a></p>帖子</th><td><p><a href="../../../home.php?mod=space&amp;uid=78&amp;do=profile" class="xi2">1</a></p>积分</td></table></div>
+
+<p><em><a href="../../../home.php?mod=spacecp&amp;ac=usergroup&amp;gid=18" target="_blank">信息监察员</a></em></p>
+
+
+<p><span><img src="../../../static/image/common/star_level3.gif" alt="Rank: 9" /><img src="../../../static/image/common/star_level3.gif" alt="Rank: 9" /><img src="../../../static/image/common/star_level1.gif" alt="Rank: 9" /></span></p>
+
+
+
+<dl class="pil cl">
+	<dt>积分</dt><dd><a href="../../../home.php?mod=space&amp;uid=78&amp;do=profile" target="_blank" class="xi2">1</a></dd>
+</dl>
+
+<dl class="pil cl"></dl><ul class="xl xl2 o cl">
+<li class="pm2"><a href="../../../home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_78&amp;touid=78&amp;pmid=0&amp;daterange=2&amp;pid=26126&amp;tid=64" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+<p class="cp_pls cl">
+<a href="../../../forum.php?mod=topicadmin&amp;action=getip&amp;fid=51&amp;tid=64&amp;pid=26126" onclick="ajaxmenu(this, 0, 0, 2);doane(event)">IP</a>
+<a href="../../../admin.php?frames=yes&amp;action=members&amp;operation=search&amp;uid=78&amp;submit=yes" target="_blank">编辑</a>
+<a href="../../../admin.php?action=members&amp;operation=ban&amp;username=hohohmm&amp;frames=yes" target="_blank">禁止</a>
+<a href="../../../forum.php?mod=modcp&amp;action=thread&amp;op=post&amp;do=search&amp;searchsubmit=1&amp;users=hohohmm" target="_blank">帖子</a>
+<a href="../../../forum.php?mod=ajax&amp;action=quickclear&amp;uid=78" onclick="showWindow('qclear_78', this.href, 'get', 0)">清理</a>
+</p>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="../../../forum.php?mod=redirect&amp;goto=findpost&amp;ptid=64&amp;pid=26126&amp;fromuid=1"  title="您的朋友访问此链接后，您将获得相应的积分奖励" id="postnum26126" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+沙发</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon26126" src="../../../static/image/common/online_member.gif" />
+<em id="authorposton26126">发表于 2006-2-12 17:52:48</em>
+<span class="pipe">|</span>
+<a href="../../../forum.php?mod=viewthread&amp;tid=64&amp;page=1&amp;authorid=78" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_26126">
+靠,这次翻帖子的时候怎么没看到这个牛帖<br />
+<div class="quote"><blockquote>只有很好地理解了算法，你才有可能提出合理的接口以让其他组件共同工作。”我再重复强调一点：程序是描述算法和数据结构的，而不是描述继承性和多态性的。</blockquote></div><br />
+这句话最近刚有点感觉了......</td></tr></table>
+
+
+</div>
+<div id="comment_26126" class="cm">
+</div>
+
+<div id="post_rate_div_26126"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition26126"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<span class="y">
+<label for="manage26126">
+<input type="checkbox" id="manage26126" class="pc" onclick="pidchecked(this);modclick(this, 26126)" value="26126" autocomplete="off" />
+管理
+</label>
+</span>
+<div class="pob cl">
+<em>
+<a class="fastre" href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=64&amp;repquote=26126&amp;extra=page%3D2&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+<a class="editp" href="../../../forum.php?mod=post&amp;action=edit&amp;fid=51&amp;tid=64&amp;pid=26126&amp;page=1">编辑</a></em>
+
+<p>
+<a href="javascript:;" id="mgc_post_26126" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport26126', 'misc.php?mod=report&rtype=post&rid=26126&tid=64&fid=51', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_26126_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_26126')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+<div class="xi2 mbm pbm bbs">
+<script type="text/javascript">
+$('modmenu').lastChild.style.visibility = 'hidden';
+document.write($('modmenu').innerHTML);
+</script>
+</div>
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="80163c02" />
+<input type="hidden" name="optgroup" />
+<input type="hidden" name="operation" />
+<input type="hidden" name="listextra" value="page%3D2" />
+<input type="hidden" name="page" value="1" />
+</form>
+
+
+
+<div class="pgs mtm mbm cl">
+<span class="pgb y" id="visitedforumstmp" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'21'})"><a href="../../../forum/51/2.html">返回列表</a></span>
+<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=51')" href="javascript:;" title="发新帖"><img src="../../../static/image/common/pn_post.png" alt="发新帖" /></a>
+<a id="post_replytmp" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=51&tid=64')" href="javascript:;" title="回复"><img src="../../../static/image/common/pn_reply.png" alt="回复" /></a>
+</div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('10');
+var postmaxchars = parseInt('10000');
+var disablepostctrl = parseInt('1');
+</script>
+
+<div id="f_pst" class="pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=64&amp;extra=page%3D2&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onSubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls">
+<div class="avatar avtm"><img src="../../../uc_server/avatar.php?uid=1&size=middle" /></div></td>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastsmiliesdiv" class="y"><div id="fastsmiliesdiv_data"><div id="fastsmilies"></div></div></div><div class="hasfsl" id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=64" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="../../../static/js/seditor.js?xzn" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld" onclick="seditor_insertunit('fastpost', '[b]', '[/b]');doane(event);">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor" onclick="showColorBox(this.id, 2, 'fastpost');doane(event);">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg" onclick="seditor_menu('fastpost', 'img');doane(event);">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk" onclick="seditor_menu('fastpost', 'url');doane(event);">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt" onclick="seditor_menu('fastpost', 'quote');doane(event);">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd" onclick="seditor_menu('fastpost', 'code');doane(event);">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml" onclick="showMenu({'ctrlid':this.id,'evt':'click','layer':2});return false;">Smilies</a>
+<script type="text/javascript" reload="1">smilies_show('fastpostsmiliesdiv', 8, 'fastpost');</script>
+<script src="../../../static/js/at.js?xzn" type="text/javascript"></script>
+<a id="fastpostat" href="javascript:;" title="@朋友" class="fat" onclick="seditor_menu('fastpost', 'at');doane(event);">@朋友</a>
+<span class="pipe z">|</span><span id="spanButtonPlaceholder">上传</span></div></div>
+<div class="area">
+<textarea rows="6" cols="80" name="message" id="fastpostmessage" onKeyDown="seditor_ctlent(event, 'fastpostvalidate($(\'fastpostform\'))');" tabindex="4" class="pt"></textarea>
+</div>
+</div>
+</div>
+</div>
+<div id="seccheck_fastpost">
+<div class="mtm"><span id="seccode_cSbqAO2q"></span>		
+<script type="text/javascript" reload="1">updateseccode('cSbqAO2q', '<sec> <span id="sec<hash>" onclick="showMenu(this.id)"><sec></span><div id="sec<hash>_menu" class="p_pop p_opt" style="display:none"><sec></div>', 'forum::viewthread');</script>
+</div></div>
+
+<script type="text/javascript">
+var editorid = '';
+var ATTACHNUM = {'imageused':0,'imageunused':0,'attachused':0,'attachunused':0}, ATTACHUNUSEDAID = new Array(), IMGUNUSEDAID = new Array();
+</script>
+
+<input type="hidden" name="posttime" id="posttime" value="1550501361" />
+<div class="upfl hasfsl">
+<table cellpadding="0" cellspacing="0" border="0" id="attach_tblheader" style="display: none;">
+<tr>
+<td>点击附件文件名添加到帖子内容中</td>
+<td class="atds">描述</td>
+<td class="attv">
+阅读权限
+<img src="../../../static/image/common/faq.gif" alt="Tip" class="vm" onmouseover="showTip(this)" tip="阅读权限按由高到低排列，高于或等于选中组的用户才可以阅读" />
+</td>
+<td class="attpr"></td><td class="attc"></td>
+</tr>
+</table>
+<div class="fieldset flash" id="attachlist"></div>
+<script src="../../../static/js/upload.js?xzn" type="text/javascript"></script><script type="text/javascript">
+var upload = new SWFUpload({
+upload_url: "../../../misc.php?mod=swfupload&action=swfupload&operation=upload&fid=51",
+post_params: {"uid" : "1", "hash":"d74a7fe44b2cd2254525cd7739d9d6bb"},
+file_size_limit : "2000",
+file_types : "*.*",
+file_types_description : "All Support Formats",
+file_upload_limit : 0,
+file_queue_limit : 0,
+swfupload_preload_handler : preLoad,
+swfupload_load_failed_handler : loadFailed,
+file_dialog_start_handler : fileDialogStart,
+file_queued_handler : fileQueued,
+file_queue_error_handler : fileQueueError,
+file_dialog_complete_handler : fileDialogComplete,
+upload_start_handler : uploadStart,
+upload_progress_handler : uploadProgress,
+upload_error_handler : uploadError,
+upload_success_handler : uploadSuccess,
+upload_complete_handler : uploadComplete,
+button_image_url : "static/image/common/uploadbutton_small.png",
+button_placeholder_id : "spanButtonPlaceholder",
+button_width: 17,
+button_height: 25,
+button_cursor:SWFUpload.CURSOR.HAND,
+button_window_mode: "transparent",
+custom_settings : {
+progressTarget : "attachlist",
+uploadSource: 'forum',
+uploadType: 'attach',
+uploadFrom: 'fastpost'
+},
+debug: false
+});
+</script>
+</div>
+
+<input type="hidden" name="formhash" value="80163c02" />
+<input type="hidden" name="usesig" value="1" />
+<input type="hidden" name="subject" value="  " />
+<p class="ptm pnpost">
+<a href="../../../home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=51" class="y" target="_blank">本版积分规则</a>
+<button type="submit" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
+<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc" />回帖后跳转到最后一页</label>
+<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+</p>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<div id="visitedforums_menu" class="p_pop blk cl" style="display: none;">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td id="v_forums">
+<h3 class="mbn pbn bbda xg1">浏览过的版块</h3>
+<ul class="xl xl1">
+<li><a href="../../../forum/70/1.html">听香水榭(文学文艺/BOOKS ARTS &amp; LITERA</a></li><li><a href="../../../forum/25/1.html">号令天下(语言学习/LANGUAGE)</a></li><li><a href="../../../forum/52/1.html">电脑医院(COMPUTER HOSPITAL)</a></li><li><a href="../../../forum/30/1.html">指点江山(政经历史/POLITICS ECONOMICS HIST</a></li><li><a href="../../../forum/63/1.html">International politics</a></li><li><a href="../../../forum/62/1.html">American Politics</a></li><li><a href="../../../forum/45/1.html">开创世纪(实习就业/CAREER)</a></li><li><a href="../../../forum/17/1.html">琴韵小筑(音乐戏剧/MUSIC &amp; THEATERS)</a></li><li><a href="../../../forum/46/1.html">信手拈来(情感融合/EMOTIONS)</a></li></ul>
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 0, 'forum.php?mod=viewthread&tid=64', 1);}</script>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=80163c02&fuid='+values['fuid'];
+}
+}
+fixed_avatar([51001,26126], 1);
+</script>	</div>
+<div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="../../../misc.php?mod=stat" >站点统计</a><span class="pipe">|</span><a href="javascript:;"  onclick="showWindow('miscreport', 'misc.php?mod=report&url='+REPORTURL);return false;">举报</a><span class="pipe">|</span><a href="../../../archiver/" >Archiver</a><span class="pipe">|</span><a href="../../../forum.php?mobile=yes" >手机版</a><span class="pipe">|</span><a href="../../../forum.php?mod=misc&amp;action=showdarkroom" >小黑屋</a><span class="pipe">|</span><strong><a href="http://www.comsenz.com/" target="_blank">Comsenz Inc.</a></strong>
+</p>
+<p class="xs0">
+GMT+8, 2019-2-18 22:49<span id="debuginfo">
+, Processed in 0.014733 second(s), 19 queries
+.
+</span>
+</p>
+</div>
+<div id="frt">
+<p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>X3.4</em></p>
+<p class="xs0">&copy; 2001-2017 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a></p>
+</div><script type="text/javascript">
+var invisiblestatus = '在线';
+var loginstatusobj = $('loginstatusid');
+if(loginstatusobj != undefined && loginstatusobj != null) loginstatusobj.innerHTML = invisiblestatus;
+</script>
+</div>
+<script src="../../../home.php?mod=spacecp&amp;ac=pm&amp;op=checknewpm&amp;rand=1550501361" type="text/javascript"></script>
+<script src="../../../home.php?mod=misc&amp;ac=sendmail&amp;rand=1550501361" type="text/javascript"></script>
+<div class="focus plugin" id="ip_notice"></div>
+<script type="text/javascript">ipNotice();</script>
+
+<div id="scrolltop">
+<span><a href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=64&amp;extra=page%3D2&amp;page=1" onclick="showWindow('reply', this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+<span>
+<a href="../../../forum/51/1.html" hidefocus="true" class="returnlist" title="返回列表"><b>返回列表</b></a>
+</span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+</body>
+</html>

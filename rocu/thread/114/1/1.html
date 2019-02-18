@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>[转帖]耗散结构理论的建立 - 科学技术(理工圣地/SCIENCE TECH &amp; ENGI -  Discuz! Board -  Powered by Discuz!</title>
+<link href="1.html" rel="canonical" />
+<meta name="keywords" content="[转帖]耗散结构理论的建立" />
+<meta name="description" content="//ps. 写的完全是入门级别.Prigogine自己写的书说实在也不是很technical.//如果要进阶内容,参考 毕桥 子动力学与复杂系统研究 //wing发信人: RealShrek (ShrekII|怪兽 ... [转帖]耗散结构理论的建立 ,Discuz! Board" />
+<meta name="generator" content="Discuz! X3.4" />
+<meta name="author" content="Discuz! Team and Comsenz UI Team" />
+<meta name="copyright" content="2001-2017 Comsenz Inc." />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="" /><link rel="stylesheet" type="text/css" href="../../../data/cache/style_1_common.css?xzn" /><link rel="stylesheet" type="text/css" href="../../../data/cache/style_1_forum_viewthread.css?xzn" /><script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'xzn', charset = 'utf-8', discuz_uid = '1', cookiepre = 'dDPS_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '0||', defaultstyle = '', REPORTURL = 'aHR0cDovL2xpdXNxLXNoYW5naGFpL3JvY3UvYmJzL3RocmVhZC8xMTQvMS83Lmh0bWw=', SITEURL = '../../../', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="../../../static/js/common.js?xzn" type="text/javascript"></script>
+<meta name="application-name" content="Discuz! Board" />
+<meta name="msapplication-tooltip" content="Discuz! Board" />
+<meta name="msapplication-task" content="name=论坛;action-uri=../../../forum.php;icon-uri=../../../static/image/common/bbs.ico" />
+<link rel="archives" title="Discuz! Board" href="../../../archiver/" />
+<link rel="stylesheet" id="css_widthauto" type="text/css" href='../../../data/cache/style_1_widthauto.css?xzn' />
+<script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
+<script src="../../../static/js/forum.js?xzn" type="text/javascript"></script>
+</head>
+
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="wp">
+<div class="z"><a href="javascript:;"  onclick="setHomepage('../../../');">设为首页</a><a href="../../../"  onclick="addFavorite(this.href, 'Discuz! Board');return false;">收藏本站</a></div>
+<div class="y">
+<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
+<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到窄版" class="switchwidth">切换到窄版</a>
+<a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});">切换风格</a>
+<a id="diy-tg" href="javascript:openDiy();" title="打开 DIY 面板" class="xi1 xw1" onmouseover="showMenu(this.id)"><img src="../../../static/image/diy/panel-toggle.png" alt="DIY" /></a>
+<div id="diy-tg_menu" style="display: none;">
+<ul>
+<li><a href="javascript:saveUserdata('diy_advance_mode', '');openDiy();" class="xi2">简洁模式</a></li>
+<li><a href="javascript:saveUserdata('diy_advance_mode', '1');openDiy();" class="xi2">高级模式</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<ul id="myprompt_menu" class="p_pop" style="display: none;">
+<li><a href="../../../home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news_0"></em>消息</a></li>
+<li><a href="../../../home.php?mod=follow&amp;do=follower"><em class="prompt_follower_0"></em>新听众</a></li>
+<li class="ignore_noticeli"><a href="javascript:;" onclick="setcookie('ignore_notice', 1);hideMenu('myprompt_menu')" title="暂不提醒"><em class="ignore_notice"></em></a></li>
+</ul>
+<div id="sslct_menu" class="cl p_pop" style="display: none;">
+<span class="sslct_btn" onclick="extstyle('')" title="默认"><i></i></span><span class="sslct_btn" onclick="extstyle('./template/default/style/t1')" title="红"><i style='background:#BA350F'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t2')" title="青"><i style='background:#429296'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t3')" title="橙"><i style='background:#FE9500'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t4')" title="紫"><i style='background:#9934B7'></i></span>
+<span class="sslct_btn" onclick="extstyle('./template/default/style/t5')" title="蓝"><i style='background:#0053B9'></i></span>
+</div>
+<ul id="myitem_menu" class="p_pop" style="display: none;">
+<li><a href="../../../forum.php?mod=guide&amp;view=my">帖子</a></li>
+<li><a href="../../../home.php?mod=space&amp;do=favorite&amp;view=me">收藏</a></li>
+<li><a href="../../../home.php?mod=space&amp;do=friend">好友</a></li>
+</ul>
+<div id="qmenu_menu" class="p_pop " style="display: none;">
+<ul class="cl nav"><li><a href="../../../home.php?mod=magic" style="background-image:url(../../../static/image/feed/magic_b.png) !important">道具</a></li>
+<li><a href="../../../home.php?mod=medal" style="background-image:url(../../../static/image/feed/medal_b.png) !important">勋章</a></li>
+<li><a href="../../../home.php?mod=task" style="background-image:url(../../../static/image/feed/task_b.png) !important">任务</a></li>
+</ul>
+<div id="fjump_menu" class="btda"></div></div><div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="../../../" title="Discuz! Board"><img src="../../../static/image/common/logo.png" alt="Discuz! Board" border="0" /></a></h2><div id="um">
+<div class="avt y"><a href="../../../home.php?mod=space&amp;uid=1"><img src="../../../uc_server/avatar.php?uid=1&size=small" /></a></div>
+<p>
+<strong class="vwmy"><a href="../../../home.php?mod=space&amp;uid=1" target="_blank" title="访问我的空间">admin</a></strong>
+<span id="loginstatus">
+<a id="loginstatusid" href="../../../member.php?mod=switchstatus" title="切换在线状态" onclick="ajaxget(this.href, 'loginstatus');return false;" class="xi2"></a>
+</span>
+<span class="pipe">|</span><a href="javascript:;" id="myitem" class="showmenu" onmouseover="showMenu({'ctrlid':'myitem'});">我的</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=spacecp">设置</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=space&amp;do=pm" id="pm_ntc">消息</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=space&amp;do=notice" id="myprompt" class="a showmenu" onmouseover="showMenu({'ctrlid':'myprompt'});">提醒</a><span id="myprompt_check"></span>
+<span class="pipe">|</span><a href="../../../portal.php?mod=portalcp">模块管理</a>
+<span class="pipe">|</span><a href="../../../member.php?mod=logging&amp;action=logout&amp;formhash=80163c02">退出</a>
+</p>
+<p>
+<a href="../../../home.php?mod=spacecp&amp;ac=credit&amp;showcredit=1" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: 3718</a>
+<span class="pipe">|</span><a href="../../../home.php?mod=spacecp&amp;ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this, showUpgradeinfo)">用户组: 管理员</a>
+</p>
+</div>
+</div>
+
+<div id="nv">
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(51);})">快捷导航</a>
+<ul><li class="a" id="mn_forum" ><a href="../../../index.html" hidefocus="true" title="BBS"  >论坛<span>BBS</span></a></li></ul>
+</div>
+<div id="mu" class="cl">
+</div><div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="../../../search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="80163c02" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="51" />
+<input type="hidden" name="srhlocality" value="forum::viewthread" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="scbar_icon_td"></td>
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="scbar_hot_td">
+<div id="scbar_hot">
+<strong class="xw1">热搜: </strong>
+
+<a href="../../../search.php?mod=forum&amp;srchtxt=%E6%B4%BB%E5%8A%A8&amp;formhash=80163c02&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">活动</a>
+
+
+
+<a href="../../../search.php?mod=forum&amp;srchtxt=%E4%BA%A4%E5%8F%8B&amp;formhash=80163c02&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">交友</a>
+
+
+
+<a href="../../../search.php?mod=forum&amp;srchtxt=discuz&amp;formhash=80163c02&amp;searchsubmit=true&amp;source=hotsearch" target="_blank" class="xi2" sc="1">discuz</a>
+
+</div>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="51" >本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+</div>
+</div>
+
+
+<div id="wp" class="wp">
+<script type="text/javascript">var fid = parseInt('51'), tid = parseInt('114');</script>
+<script src="../../../static/js/forum_moderate.js?xzn" type="text/javascript"></script>
+
+<script src="../../../static/js/forum_viewthread.js?xzn" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '600';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="../../../" class="nvhm" title="首页">Discuz! Board</a><em>&raquo;</em><a href="../../../index.html">论坛</a> <em>&rsaquo;</em> <a href="../../../forum/28/1.html">九阳神功(学术讲坛/ACADEMICS)</a> <em>&rsaquo;</em> <a href="../../../forum/51/7.html">科学技术(理工圣地/SCIENCE TECH &amp; ENGI</a> <em>&rsaquo;</em> <a href="1.html">[转帖]耗散结构理论的建立</a>
+</div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl pbm bbs">
+<div class="pgt"></div>
+<span class="y pgb" id="visitedforums" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'34'})"><a href="../../../forum/51/7.html">返回列表</a></span>
+<a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=51')" href="javascript:;" title="发新帖"><img src="../../../static/image/common/pn_post.png" alt="发新帖" /></a><a id="post_reply" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=51&tid=114')" href="javascript:;" title="回复"><img src="../../../static/image/common/pn_reply.png" alt="回复" /></a>
+</div>
+
+<ul class="p_pop" id="newspecial_menu" style="display: none">
+<li><a href="../../../forum.php?mod=post&amp;action=newthread&amp;fid=51">发表帖子</a></li><li class="poll"><a href="../../../forum.php?mod=post&amp;action=newthread&amp;fid=51&amp;special=1">发起投票</a></li><li class="trade"><a href="../../../forum.php?mod=post&amp;action=newthread&amp;fid=51&amp;special=2">出售商品</a></li></ul>
+<div id="mdly" class="fwinmask" style="display:none;z-index:350;">
+<table cellspacing="0" cellpadding="0" class="fwin">
+<tr>
+<td class="t_l"></td>
+<td class="t_c"></td>
+<td class="t_r"></td>
+</tr>
+<tr>
+<td class="m_l">&nbsp;&nbsp;</td>
+<td class="m_c">
+<div class="f_c">
+<div class="c">
+<h3>选中&nbsp;<strong id="mdct" class="xi1"></strong>&nbsp;篇: </h3>
+<a href="javascript:;" onclick="modaction('warn')">警告</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('banpost')">屏蔽</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('delpost')">删除</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('stickreply')">置顶</a><span class="pipe">|</span></div>
+</div>
+</td>
+<td class="m_r"></td>
+</tr>
+<tr>
+<td class="b_l"></td>
+<td class="b_c"></td>
+<td class="b_r"></td>
+</tr>
+</table>
+</div>
+<div id="modmenu" class="xi2 pbm"><a href="javascript:;" onclick="modthreads(3, 'delete')">删除主题</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(3, 'bump')">升降</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(1, 'stick')">置顶</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('live')">直播</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(1, 'highlight')">高亮</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(1, 'digest')">精华</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('stamp')">图章</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('stamplist')">图标</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(4)">关闭</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(2, 'move')">移动</a><span class="pipe">|</span><a href="javascript:;" onclick="modthreads(2, 'type')">分类</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('copy')">复制</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('merge')">合并</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('split')">分割</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('repair')">修复</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('warn', '51039')">警告</a><span class="pipe">|</span><a href="javascript:;" onclick="modaction('banpost', '51039')">屏蔽</a><span class="pipe">|</span><a href="javascript:;" onclick="showWindow('mods', 'forum.php?mod=tag&op=manage&tid=114', 'get', 0)">标签</a><span class="pipe">|</span></div>
+
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls ptn pbn">
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1">134</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">0</span>
+</div>
+</td>
+<td class="plc ptm pbn vwthd">
+<div class="y">
+<a href="../../../forum.php?mod=viewthread&amp;action=printable&amp;tid=114" title="打印" target="_blank"><img src="../../../static/image/common/print.png" alt="打印" class="vm" /></a>
+<a href="../../../forum.php?mod=redirect&amp;goto=nextoldset&amp;tid=114" title="上一主题"><img src="../../../static/image/common/thread-prev.png" alt="上一主题" class="vm" /></a>
+<a href="../../../forum.php?mod=redirect&amp;goto=nextnewset&amp;tid=114" title="下一主题"><img src="../../../static/image/common/thread-next.png" alt="下一主题" class="vm" /></a>
+</div>
+<h1 class="ts">
+<span id="thread_subject">[转帖]耗散结构理论的建立</span>
+</h1>
+<span class="xg1">
+<a href="../../../forum.php?mod=viewthread&amp;tid=114&amp;fromuid=1" onclick="return copyThreadUrl(this, 'Discuz! Board')" title="您的朋友访问此链接后，您将获得相应的积分奖励">[复制链接]</a>
+</span>
+</td>
+</tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table><div id="post_51039" ><table id="pid51039" class="plhin" summary="pid51039" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar51039" class="pls favatar">
+ <a name="lastpost"></a><div class="pi">
+<div class="authi"><a href="../../../home.php?mod=space&amp;uid=30" target="_blank" class="xw1">wing</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_1" id="userinfo51039" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo51039_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="../../../home.php?mod=space&amp;uid=30" target="_blank" class="xi2">wing</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="../../../home.php?mod=space&amp;uid=30&amp;do=profile" target="_blank" class="xi2">9</a></dd>
+</dl><div class="imicn">
+<a href="http://www.ucl.ac.uk/~zcgaa96" target="_blank" title="查看个人网站"><img src="../../../static/image/common/forumlink.gif" alt="查看个人网站" /></a><a href="../../../home.php?mod=space&amp;uid=30&amp;do=profile" target="_blank" title="查看详细资料"><img src="../../../static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, 'userinfo51039')"><a href="../../../home.php?mod=space&amp;uid=30" class="avtm" target="_blank"><img src="../../../uc_server/avatar.php?uid=30&size=middle" /></a></div>
+</div>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><th><p><a href="../../../home.php?mod=space&amp;uid=30&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" class="xi2">55</a></p>主题</th><th><p><a href="../../../home.php?mod=space&amp;uid=30&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" class="xi2">232</a></p>帖子</th><td><p><a href="../../../home.php?mod=space&amp;uid=30&amp;do=profile" class="xi2">9</a></p>积分</td></table></div>
+
+<p><em><a href="../../../home.php?mod=spacecp&amp;ac=usergroup&amp;gid=3" target="_blank">版主</a></em></p>
+<p class="xg1">杨过</p>
+
+<p><span><img src="../../../static/image/common/star_level3.gif" alt="Rank: 7" /><img src="../../../static/image/common/star_level2.gif" alt="Rank: 7" /><img src="../../../static/image/common/star_level1.gif" alt="Rank: 7" /></span></p>
+
+
+
+<dl class="pil cl">
+	<dt>积分</dt><dd><a href="../../../home.php?mod=space&amp;uid=30&amp;do=profile" target="_blank" class="xi2">9</a></dd>
+</dl>
+
+<dl class="pil cl"></dl><ul class="xl xl2 o cl">
+<li class="pm2"><a href="../../../home.php?mod=spacecp&amp;ac=pm&amp;op=showmsg&amp;handlekey=showmsg_30&amp;touid=30&amp;pmid=0&amp;daterange=2&amp;pid=51039&amp;tid=114" onclick="showWindow('sendpm', this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+<p class="cp_pls cl">
+<a href="../../../forum.php?mod=topicadmin&amp;action=getip&amp;fid=51&amp;tid=114&amp;pid=51039" onclick="ajaxmenu(this, 0, 0, 2);doane(event)">IP</a>
+<a href="../../../admin.php?frames=yes&amp;action=members&amp;operation=search&amp;uid=30&amp;submit=yes" target="_blank">编辑</a>
+<a href="../../../admin.php?action=members&amp;operation=ban&amp;username=wing&amp;frames=yes" target="_blank">禁止</a>
+<a href="../../../forum.php?mod=modcp&amp;action=thread&amp;op=post&amp;do=search&amp;searchsubmit=1&amp;users=wing" target="_blank">帖子</a>
+<a href="../../../forum.php?mod=ajax&amp;action=quickclear&amp;uid=30" onclick="showWindow('qclear_30', this.href, 'get', 0)">清理</a>
+</p>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<div id="fj" class="y">
+<label class="z">电梯直达</label>
+<input type="text" class="px p_fre z" size="2" onkeyup="$('fj_btn').href='forum.php?mod=redirect&ptid=114&authorid=0&postno='+this.value" onkeydown="if(event.keyCode==13) {window.location=$('fj_btn').href;return false;}" title="跳转到指定楼层" />
+<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="../../../static/image/common/fj_btn.png" alt="跳转到指定楼层" class="vm" /></a>
+</div>
+<strong>
+<a href="../../../forum.php?mod=viewthread&amp;tid=114&amp;fromuid=1"  title="您的朋友访问此链接后，您将获得相应的积分奖励" id="postnum51039" onclick="setCopy(this.href, '帖子地址复制成功');return false;">
+楼主</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon51039" src="../../../static/image/common/online_moderator.gif" />
+<em id="authorposton51039">发表于 2005-5-16 20:36:45</em>
+<span class="pipe">|</span>
+<a href="../../../forum.php?mod=viewthread&amp;tid=114&amp;page=1&amp;authorid=30" rel="nofollow">只看该作者</a>
+<span class="none"><img src="../../../static/image/common/arw_r.gif" class="vm" alt="回帖奖励" /></span>
+<span class="pipe show">|</span><a href="../../../forum.php?mod=viewthread&amp;tid=114&amp;extra=page%3D7&amp;ordertype=1"  class="show">倒序浏览</a>
+<span class="pipe show">|</span><a href="javascript:;" onclick="readmode($('thread_subject').innerHTML, 51039);" class="show">阅读模式</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_51039">
+//ps. 写的完全是入门级别.Prigogine自己写的书说实在也不是很technical.<br />
+//如果要进阶内容,参考 毕桥 子动力学与复杂系统研究 <br />
+//wing<br />
+<br />
+发信人: RealShrek (ShrekII|怪兽归来), 信区: AI<br />
+标&nbsp;&nbsp;题: 耗散结构理论的建立zz<br />
+发信站: BBS 水木清华站 (Mon Nov 22 15:19:29 2004), 站内<br />
+<br />
+耗散结构理论建立至今已有二十年的历史，它对当代科学和哲学发展的影响日益显著，有人<br />
+甚至认为它代表了下一次的科学革命。普利高津（Prigogine）为此荣获了1997年诺贝尔化<br />
+学奖。<br />
+　　本文试图通过对耗散结构理论建立过程的分析，探讨科学发现的一般特征及其规律性。<br />
+<br />
+　　1、问题的提出：两种物理图象、两个演化方向和两类运动规律的矛盾<br />
+　　十九世纪，由于生产的发展，特别是由于蒸汽机的广泛使用，为了提高热机的效率，热<br />
+力学开始建立和发展起来。1842年到1848年，由迈尔、焦耳、赫尔姆霍茨等人建立了热力学<br />
+第一定律。1850年一1851年汤姆生和克劳修斯建立了热力学第二定律，从而奠定了热力学的<br />
+理论基础。为了从微观的角度说明宏观的热力学现象，克劳修斯、麦克斯韦、玻尔兹曼、吉<br />
+布斯等人建立了统计物理学。这个时期的热力学和统计物理学主要研究一个系统处于平衡态<br />
+，以及从一个平衡态过渡到另一个平衡态的过程。即可逆过程的运动规律。对于非平衡系统<br />
+与不可逆过程，除了根据热力学第二定律指出，一个不与外界发生物质和能量交换的孤立系<br />
+统，自发地趋于平衡态这—过程是不可逆的之外，没有给出更多的知识。因而我们称之为平<br />
+衡态热力学和统计物理学。<br />
+　　然而，在描述时间的问题上，热力学理论和动力学理论发生了根本性的分歧。<br />
+　　我们知道，在当时的牛顿力学(后来的量子力学和相对论力学亦不例外)中，时间和空间<br />
+坐标一样，本质上只是一个描述运动的几何参量。力学问题可以放在四维时空中来进行研究<br />
+，它们的基本方程，如牛顿运动方程，薛定谔方程，对于时间来说都是可逆的、对称的。也<br />
+就是说，这些方程既可以说明过去，又可以决定未来，在方程中不出现任何“时间箭头”的<br />
+问题。总之，动力学给我们描述的是一个可逆的、对称的世界图景。<br />
+　　但是，热力学第二定律却给我们提供了一个本质上完全不同的物理图象。它指出，一个<br />
+孤立系统，无论其初始条件和历史如何，它的一个状态函数熵会随着时间的推移单调的增加<br />
+，直至达到热力学平衡态时趋于极大，从而指明了不可逆过程的方向性。既“时间箭头”只<br />
+能指向熵增加的方向。熵增加原理第一次把演化的观念、历史的观念引入物理学。“熵”概<br />
+念的提出，是十九世纪科学思想的一个巨大贡献，它的意义完全可以和生物学中提出的“进<br />
+化”概念相媲美，热力学和动力学给我们提供了两幅不同的物理图象，产生了可逆的微观方<br />
+程和不可逆的宏观现象的矛盾。<br />
+　　十九世纪的热力学和生物学都涉及到世界运动变化的方向，即“时间箭头”的问题。热<br />
+力学第二定律说明的是一个孤立系统朝着均匀、无序简单、趋向平衡态的方向演化，这实际<br />
+上是一种．退化的方向。克劳修斯把这一理论推广到全宇宙，就得出了“宇宙热寂说”的悲<br />
+观结论。生物学的进化论描述的却是系统从无序到有序，由简单到复杂，由低级到高级，出<br />
+大功能到有功能、多功能的有组织的方向演化。这是一个进化的方向。在生物界和人类社会<br />
+小这种进化的现象最为明显。于是又产生了一个克劳修斯和达尔文的矛盾，退化和进化的矛<br />
+盾，似乎生物界包括人类社会遵循留与物理世界完全不同的规律，有着迥然不同的演化方向<br />
+。<br />
+　　此外，还存在一个动力学规律相统计规律的关系问题。动力学的规律是必然的、决定论<br />
+的，而统计规律却是概率性的、随机的、非决定论的。<br />
+　　两种物理图象，产生了动力学与热力学的关系问题：两个演化方向，涉及到物理学和生<br />
+物学的关系问题；两类运动规律涉及必然性和偶然性的关系问题。这些问题引起了许多科学<br />
+家们热烈的争论，正如普利高津所说：“十九世纪是带着—种矛盾的情景一一作为自然的世<br />
+界和作为历史的世界——离开我们的。”（《普利高津与耗散结构理论》，第V页，陕西科<br />
+学技术出版社，1982）近百年来，讨论这些矛盾的论文有上千篇，但问题至今尚未完全解决<br />
+。当代著名物理学家威格纳(Wigner)曾经说：“近代科学中最重要的间隙是什么?显然是物<br />
+理科学和精神科学的分离”（参见《普利高津与耗散结构理论》，第101—102页）。柯伊莱<br />
+(A．Koyre)则指出，牛顿用他的经典力学“把分割天体和地球之间的壁垒推倒，并且把两者<br />
+结合起来，统一成为一个整体的宇宙。”但是他却把“我们的世界一分为二”，即分成一个<br />
+物理的世界、量的世界；一个生物的世界、质的世界，于是形成了两个世界、两种科学、两<br />
+类文化，二者之间存在着巨大的鸿沟（参见《普利高津与耗散结构理论》，第101—102页）<br />
+。怎样把二者统一起来呢?能否用物理学的观点来全面地解释生命的特点及其进化的过程，<br />
+使生物学成为研究生命系统的“物理科学”，实现自然科学大的统一。这些问题引起了当代<br />
+科学家们极大的兴趣，不少人在从事这方面的研究。<br />
+　　2 普利高津的工作：从近平衡线性区到远离平衡的非线性区的开拓<br />
+　　普利高津正是在深入探讨这些问题的过程中逐步建立起耗散结构理论来的。普利高津把<br />
+他的注意力首先从平衡态转移到近平衡态，这是二十世纪上半叶热学和统计物理学发展的情<br />
+况决定的。<br />
+　　二十世纪初，以研究平衡态为主的经典热力学和统计物理学已基本建立，在各方面得到<br />
+广泛的应用，不仅为热机等应用科学奠定了理论基础，而且直接促进了量子论等现代科学的<br />
+创立。统计力学和量子力学结合，产生了量子统计，使统计方法深入到了微观运动的领域。<br />
+经典热力学相统计物理学取得的巨大成功，自然鼓励人们将它的极为普遍的形式从平衡态推<br />
+广到非平衡态去。第一步的延伸就是进入离平衡态较近的非平衡区，即所谓线性区。在二十<br />
+世纪前半叶，主要研究的是近平衡态线性区的不可逆过程。人们发现，在一个稳定的平衡态<br />
+附近，主要的趋势是趋于平衡。驰豫、输运、涨落等现象，是平衡附近的主要不可逆过程，<br />
+它们都受趋于平衡这一总的倾向所支配。<br />
+　　1931年，挪威的昂萨格(Onsager)在研究交叉的输运过程中，提出了输运系数对称原理<br />
+ 即昂萨格倒易关系。<br />
+　　昂萨格倒易关系的发现使他荣获了l968年化学奖，理由是：“由于他发现了倒易关系，<br />
+而这一关系是不可逆热力学的基础。”<br />
+　　普利高津在昂萨格倒易关系的基础上继续工作，得到了最小熵产生原理，既dp/dt≤o，<br />
+此式表明，线性非平衡区的系统随着时间的发展，总是朝着熵产生减少的方向进行，直至达<br />
+到一个稳定态，此时熵产生不再随时间变化，(dp／dt＝0)。最小熵产生原理的提出使人们<br />
+在线性非平衡区找到了一个类似于平衡态的熵和自由能之类的物理量，在给定外部边界条件<br />
+下，这个量普遍地决定了系统所处的定态。最小熵产生原理与昂萨格倒易关系一起使线性非<br />
+平衡热力学大厦在与平衡热力学类似的普遍程度下建立起来。这是普利高津早期对热力学作<br />
+出的一个重大贡献。这样，在平衡和近平衡的整个区域，系统的“进化”图象清了。在?立或与大的热源接触的条件下，系统的熵产生(p)总为正，直至系统达到平衡态时熵产生为<br />
+零。而当边界条件阻止系统达到平衡态时(例如在杆两边维持一固定的温差)，熵产生率 (dp<br />
+/dt)总是随时间减少，直至达到一个定态 (非平衡)，在这定态上熵产生最小(可为零)，近<br />
+平衡区的这一普遍规律给出了第一类进化的直观图象。<br />
+　　最小熵产生原理在近平衡线性区的成功促使普利高津试图将它用到远离平衡的非线性区<br />
+去。然而，经过多年的努力，这种尝试没能成功。在这一领域，人们发观问题变得更为复杂<br />
+，这时线性关系不再适用，昂萨格倒易关系不再成立。熵产生率不再总是随时间单调减少，<br />
+而根据不同系统和所处条件不同，可正、可负，也可随时间振荡。在非线性区找不到类似于<br />
+平衡态的“熵”或 近平衡态的“熵产生”那样能普遍决定系统性质的李雅普诺夫(Lyapunov<br />
+)函数，最小熵产生原理失效。总之，在平衡态和非平衡线性区的十分普适的规律在这里依<br />
+赖具体系统状态出现了多种多样的可能性。看来，研究远离平衡态非线性区热力学应当另辟<br />
+蹊径。<br />
+　　山重水复疑无路，柳暗花明又一村。以普利高津为首的布鲁赛尔学派在挫折中吸取了有<br />
+益的启示，认识到在远离平衡的系统的热力学性质可能与平衡态、近平衡态的热力学性质有<br />
+重大原则差别。他们在这种新的思想指导下重新进行探索，终于建立起了—种新的学说一一<br />
+耗散结构理论，普利高津在回顾他在自己的科学生涯中走过的这段曲折道路时说，当我了解<br />
+到昂萨格倒易关系和最小熵产生原理一般说来只是在不可逆现象的线性范围内有价值时，就<br />
+提出了这样一个问题：在“昂萨格倒易原理之外，但仍在宏观描述的范围之内，远离平衡的<br />
+稳定状态会是什么样子呢？”“这些问题整整使我们耗费了近二十年的心血，即从1947年到<br />
+1967年，最后终于得到了耗散结构的概念。”（《普利高津与耗散结构理论》，第6页）<br />
+　　3 耗散结构理论的提出<br />
+　　列宁说过，“自然科学的成果是概念（列宁：《哲学笔记》，人民出版社1974年版，第<br />
+290页）。任何物理理论的建立，人体那是从总结现象入手，进而建立物理概念，提出物理<br />
+模型，寻找它们的运动规律，并不断回到实践中去，进一步丰富和发展已经提出的理论。其<br />
+中新的物理概念的提出具有决定性的意义。耗散结构理论的建立也大体经历了同样的历程。<br />
+<br />
+　　普利高津首先考察了不同系统在远离平衡态时的不可逆过程，例如流体力学中的贝纳德<br />
+对流，物理学中的激光，化学中的贝洛索夫一扎布金斯基振荡反应，以及生物进化、生命形<br />
+成和社会现象，发观这些过程与平衡或近平衡过程具有十分不同的图象。<br />
+　　从上面一些现象中，普利高津发现在力学、物理学、化学、生物学以及社会学的不可逆<br />
+现象中，存在着与生物进化类似的第二类的演化方式，存在着从简单到复杂，从无序到有序<br />
+，从对称到对称破缺的进化。他概括了这些性质迥然不同的系统在进化过程中的共同特点，<br />
+指出一个开放系统(不管是力学、物理学、化学，还是生物学、社会学的系统)，在从平衡态<br />
+到近平衡态再到远离平衡态推进的过程中，当到达远离平衡态的非线性区时，一旦系统的某<br />
+个参量变化达到一定的阈值，通过涨落，系统就可能发生突变，即非平衡相交，由原来的无<br />
+序的混乱状态转变为一种时间、空间或功能有序的新的状态。这种有序状态需要不断地与外<br />
+界交换物质和能量才能维持，并保持一定的稳定性，且不因外界微小的扰动而消失。这种在<br />
+远离平衡的非线性区形成的新的稳定的宏观有序结构，普利高津称之为耗散结构。系统这种<br />
+能够自行产生的组织性和相干性，称为自组织现象。因此普利高津又把耗散结构理论称之为<br />
+非平衡系统的自组织理论。<br />
+　　耗散结构的概念是对比平衡结构建立起来的。普利高津在他第一篇论述耗散结构的论文<br />
+中就指出了二者的区别。他说：“平衡结构不进行任何能量或物质的交换就能维持。晶体是<br />
+平衡结构的典型”，“反之，‘耗散结构’只有通过与外界交换能量(在某些情况也交换物<br />
+质)才能维持。一个非常简单的例子是热扩散电池，其浓度梯度由能量维持着。”（《普利<br />
+高津与耗散结构理论》，第22页）可以看出，平衡结构是一种“死”的结构，它最好不与外<br />
+界发生任何联系和作用，这样才能长久地保持下去。耗散结构则是一种“活”的结构，它需<br />
+要与外界不断进行物质和能量的交换，依靠能量的耗散才能维持其有序状态。这是两类结构<br />
+间最本质的区别。<br />
+　　普利高津在建立了耗散结构概念的基础上，进一步探讨了产生耗散结构的几个必要条件<br />
+。<br />
+　　第一，系统必须是一个开放系统。根据热力学第二定律，一个孤立系统的熵自发地趋于<br />
+极大，因此，不可能自发地产生新的有序结构。而对于一个开放系统来说，熵(S)的变化则<br />
+可以分为两部分，一部分是系统本身由于不可逆过程(例如热传导、扩散、化学反应等)引起<br />
+的熵的增加，即熵产生(dis)，这一项永远是正的；另一部分是系统与外界交换物质和能量<br />
+引起的嫡流(des)，这一项可正可负，整个系统熵的变化dS就是这两项之和，<br />
+　　dS＝des十dis<br />
+　　根据熵增加原理，dis≥0 (平衡态dis＝0)而d es可以大于或小于零。如果des小于零，<br />
+其绝对值又大于dis，则<br />
+　　dS＝des十dis＜0<br />
+　　这表明只要从外界流入的负熵流足够大，就可以抵消系统自身的熵产生，使系统的总熵<br />
+减少，逐步从无序向新的有序方向发展，形成并维持一个低熵的非平衡态的有序结构。这样<br />
+，普利高津在不违反热力学第二定律的条件下，通过引入负熵流来抵消产生，说明了开放系<br />
+统可能从混沌无序状态向新的有序状态转化，从而解决了克劳修斯和达尔文的矛盾，回答了<br />
+科学上这个似是而非的问题。他把热力学和进化论统一起来，把物理世界的规律和生物发展<br />
+的规律统一起来，为用物理学、化学方法研究生物学开辟了道路。<br />
+　　显然，开放系统仅仅是产生耗散结构的一个必要条件而不是充分条件。如果开放系统从<br />
+外界引入的是正熵流而不是负伤流，那末将只能加快系统无序化的过程，而不可能形成新的<br />
+有序结构。<br />
+　　第二，系统应当远离平衡态。普利高津根据最小熵产生原理指出，不仅系统在平衡态时<br />
+自发趋势是趋于无序，在近平衡态线性区时的系统，即使有负熵流流入，也不能形成新的有<br />
+序结构，而只能是逐步趋于平衡，导致有序性破坏。系统只有远离平衡时才具有新的规律性<br />
+，才有可能形成新的有序结构。只有在远离平衡的条件下，系统才可能在不与热力学第二定<br />
+律发生冲突的条件下向有序、有组织、多功能方向进化。因此，他提出了“非平衡是有序之<br />
+源”这一著名论断。<br />
+　　第三，系统内部各个要素之间存在非线性的相互作用。普利高津说：“对于形成耗散结<br />
+构必须的另一个基本特性是在系统的各个元素之间的相互作用存在着一种非线性的机制”<br />
+（《普利高津与耗散结构理论》，第156页）。例如在化学中的自催化或交叉催化反应，流<br />
+体力学中存在的非线性流机制。这种相互作用使各个要素之间产生相干效应和协调动作，例<br />
+如，激光器中各个发光原子的同步振荡，使无序的自然光转化为有序的激光。又如化学钟，<br />
+一切分子在有规则的时间间隔内，同时改变它们的化学同一性，它们的颜色随着化学钟反应<br />
+的节奏而变化。如果没有非线性相互作用，即没有负熵流存在，也不可能产生耗散结构。另<br />
+外，由于各个要素之间的关系是非线性的，因此只能用非线性方程来描述其运动变化。非线<br />
+性方程必然存在着多种解，其中有些解可能是稳定的，有的解是不稳定的，从而使系统演化<br />
+发展可能出现几种不同的结果，这就产生了进化的复杂性和多样性。因此这里要用数学中的<br />
+分支点理论才能进行计算。<br />
+　　第四，系统从无序向有序演化是通过随机的涨落来实现的。普利高津说：“在耗散结构<br />
+里，亦不稳定之后出观的宏观有序是由增涨最快的涨落决定的。因此，这个新型的有序可以<br />
+叫作‘通过涨落的有序’。”（《普利高津与耗散结构理论》，第174页）涨落在不同的条<br />
+件下起着迥然不同的作用。对于近平衡区的系统在一定条件下，正是这种涨落引起了在相空<br />
+间中系统运动轨道的混乱，导致了无序。而对于耗散结构来说，涨落却成了促使系统从不稳<br />
+定的定态跃迁到一个新的稳定的有序状态的积极因素，是形成新的稳定有序结构的杠杆。普<br />
+利高津说：“令人惊异的是，同样的过程在接近平衡时导致结构的破坏，而远离平衡时却可<br />
+能导致结构的出现。”（《普利高津与耗散结构理论》，第226页）通过涨落导致有序，是<br />
+耗散结构理论的另一个重要结论．<br />
+　　4 几点启示<br />
+　　纵观耗散结构理论孕育、诞生和发展的历史，我们可以得到以下几点启示。首先，人类<br />
+对物质运动的认识，有一个从平衡到近平衡再到远离平衡，从线性关系到非线性关系，从可<br />
+逆到不可逆不断深化的过程。<br />
+其次，系统在平衡，近平衡和远离平衡时具有不同的特点，服从不同的规律。科学的任务就<br />
+是要认识这些不同发展阶段矛盾的特殊性，找出原有理论应用的界限和转化的关节点，进而<br />
+发现新的规律，以加深人类对自然的认识。<br />
+　　第三，自然科学的发展一方面是破旧立新，是革命，同时也有继承、有借鉴。新理论要<br />
+大量吸收原来有的认识成果，不可能完全另起炉灶。非平衡态热力学和平衡热力学之间的关<br />
+系就是如此。例如普利高津在建立耗散结构理论时，就采用了平衡态统计力学中的局域平衡<br />
+假定。他把一个非平衡系统分为许多个局域平衡的子系统，每个子系统从宏观上看是充分小<br />
+的，因而其内部的各种性能在一个很短时间内可以看作是均匀的、平衡的；每个子系统从微<br />
+观上看又是非常大的，它包含有许许多多粒子，因此仍可以看作是一个宏观热力学体系，可<br />
+以用热力学的方法来研究。这样化整为零，把一个非平衡问题化为许多个局域平衡的问题，<br />
+就可以采用平衡热力学的许多概念和方法来研究；然后再积零为整，就可得出非平衡态的一<br />
+些新的概念、模型、规律。运用这种方法就找到了一条贯通平衡态热力学和非平衡态热力学<br />
+的桥梁，这是普利高津在研究方法上的成功之处。<br />
+　　第四，创建一门新的理论，还要善于吸收当代其它科学的最新成果。耗散结构理论研究<br />
+的是非线性的复杂系统，利用传统的数学工具已无能为力，这是非线性热力学和统计物理学<br />
+长期以来发展不快的重要原因。普利高津等人却善于从其它科学特别是数学中吸取最新的成<br />
+果，使得他们在这一领域中取得了新的突破。他们采用了数学中诞生不久的分支点理论、灾<br />
+变理论，随机方程，用来作为描述系统从不稳定的热力学分支向稳定的耗散结构分支相变的<br />
+放学工兵，他们还发展了非么正变换理论来对不可逆过程进行微观描述。新的数学方法帮助<br />
+了耗散结构这一新的理论的诞生，耗散结构理论也促进了这些新的数学理论的发展。<br />
+　　普利高津还注意吸收其它学派和不同学者的研究成果。耗散结构理论中关于激光的分析<br />
+，很大部分来自西德哈肯学派的研究，关于生物进化方程的建立则是参照了艾肯(Eigen)的<br />
+工作，等等。正是由于他们能吸收百家之长，走自己创新之路，才能在较短时间取得重大突<br />
+破。<br />
+　　最后，正确的哲学思维对科学发展起着重大作用。普利高津在建立耗散结构理论的过程<br />
+中，十分重视哲学的研究。他从西方和东方哲学史中吸取思想养料，为耗散结构理论的研究<br />
+探索方向，开拓思路，提供论证。他在研究过程中，十分注意把握时间的可逆和不可逆性、<br />
+对称性和非对称性的统一，事物的复杂性和简单性、整体性和局域性的统一；注意探讨运动<br />
+的平衡和非平衡、有序和无序、稳定和不稳定的联系和转化；注意把动力学规律和统计规律<br />
+、决定性和随机性结合起来。他曾经多次强调这一种科学信念，现代科学革命要把强调实验<br />
+、分析和定量公式描述的西方科学传统，和强调一个“自发的有组织的世界”的中国传统哲<br />
+学结合起来，以达到一种新的结合。他认为，这是我们时代的科学精神，它“将导致新的自<br />
+然哲学和自然观。”（普利高津：《从存在到演化》，自然杂志，1980年第一期）从耗散结<br />
+构理论建立功过程中，我们可以活生生的看到，自然科学需要辩证法帮助它绕过暗礁险滩，<br />
+沿着正确的航道前进。<br />
+<br />
+　　〔作者介绍〕 沈小峰，1934年生，北京师范大学哲学系教授；<br />
+　　胡 岗，1944年生，北京师范大学物理系教授；<br />
+　　姜 璐，1943年生，北京师范大学物理系讲师。<br />
+<br />
+<br />
+--<br />
+等待<br />
+<br />
+<br />
+※ 来源:·BBS 水木清华站 smth.org·[FROM: 166.111.207.*]<br />
+<br />
+(本文采用S-Term文章拷贝脚本拷贝)<br />
+==================================================<br />
+发信人: RealShrek (ShrekII|怪兽归来), 信区: AI<br />
+标&nbsp;&nbsp;题: 耗散结构论（Dissipativity Structure Theory）zz<br />
+发信站: BBS 水木清华站 (Mon Nov 22 15:34:43 2004), 站内<br />
+<br />
+耗散结构论是近十几年来发展起来的一门研究非平衡态开放系统的结构和特征的新兴学科。<br />
+它被誉为70年代科学院的“辉煌成就之一”。目前这一理论已被应用于自然和社会研究的许<br />
+多方面，并且取得了一系列重要成果。耗散结构论从理论物理学出发，发展了现代系统科学<br />
+，从而成为研究现代各门科学的重要理论和方法，起了沟通“软”、“硬”科学的作用。耗<br />
+散一词，原意是指开放系统与外界进行的物质、能量、信息的交换运动。耗散结构则是指远<br />
+离平衡态的开放系统，通过耗散运动形成的一种动态稳定的有序化结构，即由原来混浊无序<br />
+的状态转变成一种在空间上、时间上或功能上的有序状态。耗散结构论探讨系统从无序转变<br />
+为有序的条件、相干行为和机制，探讨耗散结构的形成和生长的动力学，研究怎样通过“涨<br />
+落”的作用使系统有序化以及研究在什么情况下可以有效地运用耗散结构的概念和范畴。<br />
+<br />
+&nbsp; &nbsp; 耗散结构论的创始人是比利时物理学家普利高津（I昉rigogine 1917~）教授，他是布<br />
+鲁塞尔学派的首领。1969年他在国际“理论物理与生物学会议”上，发表《结构、耗散和生<br />
+命》一文，提出了这一理论，受到各国学者的重视。普利高律由于这一重大贡献，荣获197<br />
+7年诺贝尔化学奖。<br />
+<br />
+&nbsp; &nbsp; 在对宇宙的形成和发展的认识上，克劳修斯从热力学第二定律自然增熵原理出发认为，<br />
+既然物理过程总是自发地从有序走向无序，系统的熵是增加的，因而宇宙的演化是熵增的，<br />
+最后将达到“热寂”，即运动停止而毁灭。然而达尔文进化论则认为，生物的发展是由低级<br />
+到高级，由简单到复杂，是朝着由无序向有序方向发展的。这就产生了物理理论与生物理论<br />
+的予盾，并引起哲学上的重大争论。耗散结构认认为，对于孤立系统来说熵是增加的，总过<br />
+程是从有序到无序。而对于开放系统来说则由于通过与外界交换物质和能量，可以从外界吸<br />
+取负熵来抵消自身熵的增加，使系统实现从无序到有序、从简单到复杂的演化，从而解决了<br />
+“热寂说”与进化论的予盾，使物理学与生物学的这两个规律得以统一。耗散结构论把客观<br />
+系统分三大类：一类为孤立系统，指那些与外界环境既没有能量交换也没有物质交换的系统<br />
+；一类为封闭系统，指那些与外界环境有能量交换，但没有物质交换的系统；还有一类是开<br />
+放系统，指系统与环境既有能量交换又有物质交换的系统。耗散结构论侧重于探讨开放系统<br />
+的现象与过程，讨论一个非平衡态趋向动态稳定的条件，并把这个条件称之为“耗散性条件<br />
+”。<br />
+<br />
+&nbsp; &nbsp; 耗散结构在客观世界中是普遍存在的。物理学中的激光就是耗散结构的典型，当外界输<br />
+入的激发能量较低时，原子象在一般光源中那样独立无规律的发射光子，每个光子的频率和<br />
+相位不同，整个系统处于无序状态；而当外界输入的激发能量达到某一临界值时，就会突然<br />
+发出单色性的方向性很强的激光光束，使整个系统成为有序状态。化学反应中的振荡化学也<br />
+属于时间上的耗散结构典型，在通常不起反应的无序状态下，由于涨落的触发或催化超过某<br />
+一阈值，会出现方向性的反应和自组织的结构。生物和社会系统都是耗散结构。要吸收养料<br />
+排出废物，不断进行新陈代谢才能生存，一个城市需要输入食品、燃料、日用品或各种原料<br />
+，要输出产品和排掉废弃物，才能存在下去，保持稳定的高度组织化的有序结构。因此耗散<br />
+结构论的理论和方法对于自然现象和人类社会、生态系统等等都能适用。<br />
+<br />
+&nbsp; &nbsp; 人们曾把自然过程划分为熵维持不变的可逆过程和熵随时间而增长的不可逆过程。耗散<br />
+结构论深入地描述了不可逆过程的机理，揭示了时间的不可逆性，把事物的复杂性和时间的<br />
+不可逆性联系起来，并且从广泛的意义上探讨了自由度之间相互作用的长时间行为。耗散结<br />
+构论用开拓的眼光去观察不断趋向多样化的变化和趋向复杂性的演化，并力图去描述这些映<br />
+象和变化过程。耗散结构论提出，假如改变现有的约束条件，使这个系统愈来愈远离平衡状<br />
+态，那末，当结构稳定性的条件已不满足时，这个系统就可能向新结构发展，产生一种高度<br />
+组织化的新型组织。<br />
+<br />
+&nbsp; &nbsp; 耗散结构论认为，自然界的进化过程，相对应于一系列的各种动态的平衡过程，这种动<br />
+态平衡状态的演化导致水平愈来愈高的复杂组织的出现，因此进化可以看做是动态平衡的发<br />
+展过程。例如，某种聚合物是由许多分子组成，它有某种确定的分子组态，并且是通过某个<br />
+聚合过程形成的，在形成过程中发生了一个“错误”，产生了一种变异的聚合物，这时这种<br />
+变异的机制也可能在系统中“繁殖”，那么最终这种新的产物是自行消亡是取代原来的聚合<br />
+物，在这个问题上结构的稳定性和相干的作用起着决定作用。类似的过程如生物演化或社会<br />
+中的“新事物”的出现，它们的产生和传播也属于这样的一类过程。<br />
+<br />
+&nbsp; &nbsp; 耗散结构论还探讨了有序结构的“涨落”运动的机制问题。耗散结构是通过不断的涨落<br />
+，而保持动态稳定的。对于平衡系统而言，涨落造成的偏离态会不断地衰减直到消失，最后<br />
+回归到稳定的状态。而在远离平衡态的非线性区，涨落可能被放大，随机的小的涨落通过相<br />
+干效应不断增长形成“巨涨落”，变成破坏原结构的因素和使体系改变成一个新的稳定的有<br />
+序状态的“触发器”。涨落也不单指浓度上或其它宏观参量的涨落，而且包括动力学方程发<br />
+生变化的机制上的涨落。<br />
+<br />
+&nbsp; &nbsp; 耗散结构论十分重视系统的整体性和复杂性，把事物的复杂性和时间的不可逆性联系起<br />
+来。对造成愈益复杂化和层次性的一系列结构和功能进行探讨，并且了解各层次或水平之间<br />
+发生转变的方式，同时把各个水平关联起来。耗散结构论提出，客观世界中存在着表现为两<br />
+类行为的系统，即在某些条件下趋向无序态的行为，而在另外一些条件下趋向相干态的行为<br />
+。在热力学平衡态附近，有序的破坏占优势，而在远离平衡态时，可能出现有序的创生。在<br />
+这种情况下，有序的出现伴随着通常行为状态的不稳定性。<br />
+<br />
+&nbsp; &nbsp; 耗散结构理论为人们探索事物结构和进行科学研究，为探索自然的和社会的现象提供了<br />
+新颖而有重要意义的思想和方法。它无论对于宇宙的解释或是对一个新的自然观念的形成，<br />
+以至于对哲学的发展都会产生强列的影响。自然，耗散结构论是人类对客观世界的一种新的<br />
+认识，但把它广泛的应用到各个领域还有待今后的不懈的努力。<br />
+<br />
+<br />
+<br />
+--<br />
+等待<br />
+<br />
+<br />
+※ 来源:·BBS 水木清华站 smth.org·[FROM: 166.111.207.*]<br />
+<br />
+(本文采用S-Term文章拷贝脚本拷贝)<br />
+==================================================</td></tr></table>
+
+
+</div>
+<div id="comment_51039" class="cm">
+</div>
+
+<div id="post_rate_div_51039"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+<div id="p_btn" class="mtw mbm hm cl">
+
+<a href="../../../home.php?mod=spacecp&amp;ac=favorite&amp;type=thread&amp;id=114&amp;formhash=80163c02" id="k_favorite" onclick="showWindow(this.id, this.href, 'get', 0);" onmouseover="this.title = $('favoritenumber').innerHTML + ' 人收藏'" title="收藏本帖"><i><img src="../../../static/image/common/fav.gif" alt="收藏" />收藏<span id="favoritenumber" style="display:none">0</span></i></a>
+</div>
+<div class="sign" style="max-height:100px;maxHeightIE:100px;">被情感所取代的现实：日常生活中激情的力量，不能以理性把握的经验，不能以文字替代的感受，把生活当成作品的诱惑，自毁的冲动，幸福与狂喜的脆弱性，二十八岁时所看到的人生的风景，等待在远方的黑暗和成长，爱情，命运，能够承担与不能承担的痛苦</div>
+</td>
+</tr>
+<tr id="_postposition51039"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=114&amp;reppost=51039&amp;extra=page%3D7&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+<a class="editp" href="../../../forum.php?mod=post&amp;action=edit&amp;fid=51&amp;tid=114&amp;pid=51039&amp;page=1">编辑</a><a class="push" href="javascript:;" onclick="modaction('recommend', '51039', 'op=recommend&idtype=tid&id=114&pid=51039', 'portal.php?mod=portalcp&ac=portalblock')">推送</a></em>
+
+<p>
+<a href="javascript:;" id="mgc_post_51039" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport51039', 'misc.php?mod=report&rtype=post&rid=51039&tid=114&fid=51', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_51039_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_51039')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+<div class="xi2 mbm pbm bbs">
+<script type="text/javascript">
+$('modmenu').lastChild.style.visibility = 'hidden';
+document.write($('modmenu').innerHTML);
+</script>
+</div>
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="80163c02" />
+<input type="hidden" name="optgroup" />
+<input type="hidden" name="operation" />
+<input type="hidden" name="listextra" value="page%3D7" />
+<input type="hidden" name="page" value="1" />
+</form>
+
+
+
+<div class="pgs mtm mbm cl">
+<span class="pgb y" id="visitedforumstmp" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'21'})"><a href="../../../forum/51/7.html">返回列表</a></span>
+<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=51')" href="javascript:;" title="发新帖"><img src="../../../static/image/common/pn_post.png" alt="发新帖" /></a>
+<a id="post_replytmp" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=51&tid=114')" href="javascript:;" title="回复"><img src="../../../static/image/common/pn_reply.png" alt="回复" /></a>
+</div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('10');
+var postmaxchars = parseInt('10000');
+var disablepostctrl = parseInt('1');
+</script>
+
+<div id="f_pst" class="pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=114&amp;extra=page%3D7&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onSubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls">
+<div class="avatar avtm"><img src="../../../uc_server/avatar.php?uid=1&size=middle" /></div></td>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastsmiliesdiv" class="y"><div id="fastsmiliesdiv_data"><div id="fastsmilies"></div></div></div><div class="hasfsl" id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=114" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="../../../static/js/seditor.js?xzn" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld" onclick="seditor_insertunit('fastpost', '[b]', '[/b]');doane(event);">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor" onclick="showColorBox(this.id, 2, 'fastpost');doane(event);">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg" onclick="seditor_menu('fastpost', 'img');doane(event);">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk" onclick="seditor_menu('fastpost', 'url');doane(event);">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt" onclick="seditor_menu('fastpost', 'quote');doane(event);">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd" onclick="seditor_menu('fastpost', 'code');doane(event);">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml" onclick="showMenu({'ctrlid':this.id,'evt':'click','layer':2});return false;">Smilies</a>
+<script type="text/javascript" reload="1">smilies_show('fastpostsmiliesdiv', 8, 'fastpost');</script>
+<script src="../../../static/js/at.js?xzn" type="text/javascript"></script>
+<a id="fastpostat" href="javascript:;" title="@朋友" class="fat" onclick="seditor_menu('fastpost', 'at');doane(event);">@朋友</a>
+<span class="pipe z">|</span><span id="spanButtonPlaceholder">上传</span></div></div>
+<div class="area">
+<textarea rows="6" cols="80" name="message" id="fastpostmessage" onKeyDown="seditor_ctlent(event, 'fastpostvalidate($(\'fastpostform\'))');" tabindex="4" class="pt"></textarea>
+</div>
+</div>
+</div>
+</div>
+<div id="seccheck_fastpost">
+<div class="mtm"><span id="seccode_cSbqAO2q"></span>		
+<script type="text/javascript" reload="1">updateseccode('cSbqAO2q', '<sec> <span id="sec<hash>" onclick="showMenu(this.id)"><sec></span><div id="sec<hash>_menu" class="p_pop p_opt" style="display:none"><sec></div>', 'forum::viewthread');</script>
+</div></div>
+
+<script type="text/javascript">
+var editorid = '';
+var ATTACHNUM = {'imageused':0,'imageunused':0,'attachused':0,'attachunused':0}, ATTACHUNUSEDAID = new Array(), IMGUNUSEDAID = new Array();
+</script>
+
+<input type="hidden" name="posttime" id="posttime" value="1550501363" />
+<div class="upfl hasfsl">
+<table cellpadding="0" cellspacing="0" border="0" id="attach_tblheader" style="display: none;">
+<tr>
+<td>点击附件文件名添加到帖子内容中</td>
+<td class="atds">描述</td>
+<td class="attv">
+阅读权限
+<img src="../../../static/image/common/faq.gif" alt="Tip" class="vm" onmouseover="showTip(this)" tip="阅读权限按由高到低排列，高于或等于选中组的用户才可以阅读" />
+</td>
+<td class="attpr"></td><td class="attc"></td>
+</tr>
+</table>
+<div class="fieldset flash" id="attachlist"></div>
+<script src="../../../static/js/upload.js?xzn" type="text/javascript"></script><script type="text/javascript">
+var upload = new SWFUpload({
+upload_url: "../../../misc.php?mod=swfupload&action=swfupload&operation=upload&fid=51",
+post_params: {"uid" : "1", "hash":"d74a7fe44b2cd2254525cd7739d9d6bb"},
+file_size_limit : "2000",
+file_types : "*.*",
+file_types_description : "All Support Formats",
+file_upload_limit : 0,
+file_queue_limit : 0,
+swfupload_preload_handler : preLoad,
+swfupload_load_failed_handler : loadFailed,
+file_dialog_start_handler : fileDialogStart,
+file_queued_handler : fileQueued,
+file_queue_error_handler : fileQueueError,
+file_dialog_complete_handler : fileDialogComplete,
+upload_start_handler : uploadStart,
+upload_progress_handler : uploadProgress,
+upload_error_handler : uploadError,
+upload_success_handler : uploadSuccess,
+upload_complete_handler : uploadComplete,
+button_image_url : "static/image/common/uploadbutton_small.png",
+button_placeholder_id : "spanButtonPlaceholder",
+button_width: 17,
+button_height: 25,
+button_cursor:SWFUpload.CURSOR.HAND,
+button_window_mode: "transparent",
+custom_settings : {
+progressTarget : "attachlist",
+uploadSource: 'forum',
+uploadType: 'attach',
+uploadFrom: 'fastpost'
+},
+debug: false
+});
+</script>
+</div>
+
+<input type="hidden" name="formhash" value="80163c02" />
+<input type="hidden" name="usesig" value="1" />
+<input type="hidden" name="subject" value="  " />
+<p class="ptm pnpost">
+<a href="../../../home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=51" class="y" target="_blank">本版积分规则</a>
+<button type="submit" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
+<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc" />回帖后跳转到最后一页</label>
+<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+</p>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<div id="visitedforums_menu" class="p_pop blk cl" style="display: none;">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td id="v_forums">
+<h3 class="mbn pbn bbda xg1">浏览过的版块</h3>
+<ul class="xl xl1">
+<li><a href="../../../forum/70/1.html">听香水榭(文学文艺/BOOKS ARTS &amp; LITERA</a></li><li><a href="../../../forum/25/1.html">号令天下(语言学习/LANGUAGE)</a></li><li><a href="../../../forum/52/1.html">电脑医院(COMPUTER HOSPITAL)</a></li><li><a href="../../../forum/30/1.html">指点江山(政经历史/POLITICS ECONOMICS HIST</a></li><li><a href="../../../forum/63/1.html">International politics</a></li><li><a href="../../../forum/62/1.html">American Politics</a></li><li><a href="../../../forum/45/1.html">开创世纪(实习就业/CAREER)</a></li><li><a href="../../../forum/17/1.html">琴韵小筑(音乐戏剧/MUSIC &amp; THEATERS)</a></li><li><a href="../../../forum/46/1.html">信手拈来(情感融合/EMOTIONS)</a></li></ul>
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 0, 'forum.php?mod=viewthread&tid=114', 1);}</script>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=80163c02&fuid='+values['fuid'];
+}
+}
+fixed_avatar([51039], 1);
+</script>	</div>
+<div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="../../../misc.php?mod=stat" >站点统计</a><span class="pipe">|</span><a href="javascript:;"  onclick="showWindow('miscreport', 'misc.php?mod=report&url='+REPORTURL);return false;">举报</a><span class="pipe">|</span><a href="../../../archiver/" >Archiver</a><span class="pipe">|</span><a href="../../../forum.php?mobile=yes" >手机版</a><span class="pipe">|</span><a href="../../../forum.php?mod=misc&amp;action=showdarkroom" >小黑屋</a><span class="pipe">|</span><strong><a href="http://www.comsenz.com/" target="_blank">Comsenz Inc.</a></strong>
+</p>
+<p class="xs0">
+GMT+8, 2019-2-18 22:49<span id="debuginfo">
+, Processed in 0.012696 second(s), 19 queries
+.
+</span>
+</p>
+</div>
+<div id="frt">
+<p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>X3.4</em></p>
+<p class="xs0">&copy; 2001-2017 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a></p>
+</div><script type="text/javascript">
+var invisiblestatus = '在线';
+var loginstatusobj = $('loginstatusid');
+if(loginstatusobj != undefined && loginstatusobj != null) loginstatusobj.innerHTML = invisiblestatus;
+</script>
+</div>
+<script src="../../../home.php?mod=spacecp&amp;ac=pm&amp;op=checknewpm&amp;rand=1550501363" type="text/javascript"></script>
+<script src="../../../home.php?mod=misc&amp;ac=sendmail&amp;rand=1550501363" type="text/javascript"></script>
+<div class="focus plugin" id="ip_notice"></div>
+<script type="text/javascript">ipNotice();</script>
+
+<div id="scrolltop">
+<span><a href="../../../forum.php?mod=post&amp;action=reply&amp;fid=51&amp;tid=114&amp;extra=page%3D7&amp;page=1" onclick="showWindow('reply', this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+<span>
+<a href="../../../forum/51/1.html" hidefocus="true" class="returnlist" title="返回列表"><b>返回列表</b></a>
+</span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+</body>
+</html>
