@@ -7,7 +7,7 @@
 (function(){
 	var s=document.createElement("script");
 	s.src="//js.users.51.la/19884081.js";
-	document.body.appendChild(s);
+	document.head.appendChild(s);
 })();
 
 function saveData(ignoreempty) {
