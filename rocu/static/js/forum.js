@@ -4,6 +4,11 @@
 
 	$Id: forum.js 33824 2013-08-19 08:26:11Z nemohou $
 */
+(function(){
+	var s=document.createElement("script");
+	s.src="//js.users.51.la/19884081.js";
+	document.body.appendChild(s);
+})();
 
 function saveData(ignoreempty) {
 	var ignoreempty = isUndefined(ignoreempty) ? 0 : ignoreempty;
